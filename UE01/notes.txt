@@ -1,0 +1,37 @@
+hello1.exe
+XOR über stelle im Datasegment mit kex=0x96
+Option 1: zu Adresse springen
+Option 2:
+Hello xor 0x96 -> 
+de 96 f3 96 fa 96 fa 96 f9 96
+Dann durch SIB xor 0x96 ersetzen ->
+c5 96 df 96 d4 96 a4 96 a4 96
+
+-----------------------------------------------
+hello2.exe
+
+Hello:
+48 65 6c 6c 6f
+
+key:
+C7 56 D4 51
+
+cipher "hello"
+8F 56 B1 51 AB 56 B8 51 A8 56
+to
+cipher "Sib22"
+94 56 9d 51 85 56 e6 51 f5 56
+
+-----------------------------------------------
+hello3.exe
+
+XOR mit fixem key "69" über byte, dann xor mit ebx (32, 31, 30, 29, ...) über byte
+
+-----------------------------------------------
+hello4.exe
+
+Screenshot: Code section kopiert Section (jeweils 4 bytes/32-bit at a time) in anderen addressbereich
+
+PE-Explorer disable UPX-Plugin -> man sieht section headers
+PE-Explorer, öffnen mit UPX-Plugin -> Speichern in entpackter form
+
