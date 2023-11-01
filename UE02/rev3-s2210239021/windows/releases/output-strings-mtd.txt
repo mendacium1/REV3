@@ -1,0 +1,297 @@
+!This program cannot be run in DOS mode.
+D$HH9D$ t"H
+D$0H9D$Ht:H
+D$0H9D$Ht:H
+D$$9D$ sAH
+D$P9D$ }'L
+D$P9D$ }'L
+D$P9D$ }+f
+																			
+																			
+																			
+D$X9D$ }@H
+D$(HcD$`H9D$(s
++HcD$`H9D$ t
+D$(HcD$`H9D$(s
++HcD$`H9D$ t
+D$`H9D$0t!H
+H+D$@H;D$8w
+D$HH9D$ t1H
+D$XH9D$(tBH
+D$PH9D$@rf
+D$HH9D$ht(H
+D$8H9D$ t"
+D$XH9D$Ht:H
+D$XH9D$Ht	
+D$HH9D$@u4H
+D$0H9D$8s*H
+D$HH9D$ t"H
+D$0H9D$Ht:H
+D$0H9D$Ht:H
+D$8H9D$ t<H
+D$(H9D$ u	
+D$pH9D$`tAH
+D$p9D$$u]H
+D$xH9D$hu(
+D$09D$<t:H
+D$09D$<t:H
+(t/HcD$ Hk
+(tmHcD$0Hk
+(t/HcD$ Hk
+D$XH9D$ t:H
+D$PH9D$ tKH
+D$PH9D$ t?H
+D$ HcD$ Hk
+D$p9D$@|:H
+HcL$XHcT$X
+D$x9D$\}&HcD$\
+D$`HcD$`H;
+D$dHcD$dH;
+D$XH9D$8srH
+D$PH9D$HsfH
+D$@9D$Ds!H
+D$XH9D$PsuH
+D$D9D$Hs!H
+D$xH9D$HssH
+D$pH9D$XsgH
+D$hH9D$(wCH
+D$(H9D$ t`H
+D$HH9D$@vjH
+D$@H9D$HsFH
+D$HH9D$@wjH
+D$XH9D$HwFH
+D$@H9D$8vFH
+D$8H9D$@sjH
+D$@H9D$8vFH
+D$8H9D$@rjH
+D$PH9D$8vFH
+D$8H9D$Ps.HcD$0H
+D$XH9D$Hs.HcD$0H
+|$  }%HcD$ H
+D$L9D$P}HHcD$PH
+@CH9D$0r5H
+D:\a\_work\1\s\src\vctools\crt\vcruntime\src\internal\per_thread_data.cpp
+__thiscall
+__fastcall
+__vectorcall
+__restrict
+__unaligned
+`local static guard'
+`vbase destructor'
+`vector deleting destructor'
+`default constructor closure'
+`scalar deleting destructor'
+`vector constructor iterator'
+`vector destructor iterator'
+`vector vbase constructor iterator'
+`virtual displacement map'
+`eh vector constructor iterator'
+`eh vector destructor iterator'
+`eh vector vbase constructor iterator'
+`copy constructor closure'
+`udt returning'
+`local vftable'
+`local vftable constructor closure'
+`omni callsig'
+`placement delete closure'
+`placement delete[] closure'
+`managed vector constructor iterator'
+`managed vector destructor iterator'
+`eh vector copy constructor iterator'
+`eh vector vbase copy constructor iterator'
+`dynamic initializer for '
+`dynamic atexit destructor for '
+`vector copy constructor iterator'
+`vector vbase copy constructor iterator'
+`managed vector copy constructor iterator'
+`local static thread guard'
+operator "" 
+operator co_await
+operator<=>
+ Type Descriptor'
+ Base Class Descriptor at (
+ Base Class Array'
+ Class Hierarchy Descriptor'
+ Complete Object Locator'
+`anonymous namespace'
+FlsGetValue
+FlsSetValue
+InitializeCriticalSectionEx
+Unknown exception
+bad exception
+minkernel\crts\ucrt\src\appcrt\stdio\_file.cpp
+minkernel\crts\ucrt\inc\corecrt_internal_stdio_output.h
+minkernel\crts\ucrt\src\appcrt\startup\argv_parsing.cpp
+minkernel\crts\ucrt\src\desktopcrt\env\environment_initialization.cpp
+CorExitProcess
+minkernel\crts\ucrt\src\appcrt\startup\onexit.cpp
+Client hook allocation failure at file %hs line %d.
+Client hook allocation failure.
+Error: memory allocation: bad memory block type.
+Client hook re-allocation failure at file %hs line %d.
+Client hook re-allocation failure.
+Error: memory allocation: bad memory block type.
+Memory allocated at %hs(%d).
+The Block at 0x%p was allocated by aligned routines, use _aligned_realloc()
+Error: possible heap corruption at or near 0x%p
+The Block at 0x%p was allocated by aligned routines, use _aligned_free()
+Client hook free failure.
+HEAP CORRUPTION DETECTED: before %hs block (#%d) at 0x%p.
+CRT detected that the application wrote to memory before start of heap buffer.
+Memory allocated at %hs(%d).
+HEAP CORRUPTION DETECTED: before %hs block (#%d) at 0x%p.
+CRT detected that the application wrote to memory before start of heap buffer.
+HEAP CORRUPTION DETECTED: after %hs block (#%d) at 0x%p.
+CRT detected that the application wrote to memory after end of heap buffer.
+Memory allocated at %hs(%d).
+HEAP CORRUPTION DETECTED: after %hs block (#%d) at 0x%p.
+CRT detected that the application wrote to memory after end of heap buffer.
+HEAP CORRUPTION DETECTED: on top of Free block at 0x%p.
+CRT detected that the application wrote to a heap buffer that was freed.
+Memory allocated at %hs(%d).
+HEAP CORRUPTION DETECTED: on top of Free block at 0x%p.
+CRT detected that the application wrote to a heap buffer that was freed.
+%hs located at 0x%p is %Iu bytes long.
+Memory allocated at %hs(%d).
+%hs located at 0x%p is %Iu bytes long.
+Cycle in block list detected while processing block located at 0x%p.
+Heap validation failed.
+Bad memory block found at 0x%p.
+Memory allocated at %hs(%d).
+Bad memory block found at 0x%p.
+ Data: <%s> %s
+Dumping objects ->
+#File Error#(%d) : 
+%hs(%d) : 
+client block at 0x%p, subtype %x, %Iu bytes long.
+normal block at 0x%p, %Iu bytes long.
+crt block at 0x%p, subtype %x, %Iu bytes long.
+Object dump complete.
+Detected memory leaks!
+<program name unknown>
+AreFileApisANSI
+CompareStringEx
+GetActiveWindow
+GetLastActivePopup
+GetProcessWindowStation
+GetUserObjectInformationW
+LCMapStringEx
+LocaleNameToLCID
+MessageBoxA
+MessageBoxW
+AppPolicyGetProcessTerminationMethod
+AppPolicyGetShowDeveloperDiagnostic
+AppPolicyGetWindowingModel
+minkernel\crts\ucrt\src\appcrt\stdio\_sftbuf.cpp
+minkernel\crts\ucrt\src\appcrt\internal\per_thread_data.cpp
+dddd, MMMM dd, yyyy
+minkernel\crts\ucrt\inc\corecrt_internal_win32_buffer.h
+minkernel\crts\ucrt\src\appcrt\startup\argv_wildcards.cpp
+minkernel\crts\ucrt\src\appcrt\mbstring\mbctype.cpp
+minkernel\crts\ucrt\src\desktopcrt\env\get_environment_from_os.cpp
+minkernel\crts\ucrt\src\desktopcrt\env\setenv.cpp
+minkernel\crts\ucrt\src\appcrt\lowio\osfinfo.cpp
+ !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+minkernel\crts\ucrt\src\appcrt\locale\getstringtypea.cpp
+Second Chance Assertion Failed: File 
+<file unknown>
+_CrtDbgReport: String too long or IO Error
+Assertion failed: 
+Assertion failed!
+%s(%d) : %s
+_CrtDbgReport: String too long or Invalid characters in String
+minkernel\crts\ucrt\src\appcrt\locale\lcmapstringa.cpp
+minkernel\crts\ucrt\src\appcrt\stdio\_getbuf.cpp
+minkernel\crts\ucrt\src\appcrt\locale\comparestringa.cpp
+BC?>6t9^	c:>
+C:\Users\admin_sin\Desktop\rev3-s2210239021\infected\x64\Release\infected.pdb
+.text$mn$00
+.rdata$voltmd
+.rdata$zzzdbg
+RtlCaptureContext
+RtlLookupFunctionEntry
+RtlVirtualUnwind
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+IsProcessorFeaturePresent
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+InitializeSListHead
+IsDebuggerPresent
+GetStartupInfoW
+GetModuleHandleW
+RtlUnwindEx
+GetLastError
+SetLastError
+EnterCriticalSection
+LeaveCriticalSection
+DeleteCriticalSection
+InitializeCriticalSectionAndSpinCount
+TlsGetValue
+TlsSetValue
+FreeLibrary
+GetProcAddress
+LoadLibraryExW
+EncodePointer
+RaiseException
+RtlPcToFileHeader
+GetStdHandle
+GetModuleFileNameW
+ExitProcess
+GetModuleHandleExW
+GetCommandLineA
+GetCommandLineW
+HeapValidate
+GetSystemInfo
+FlsGetValue
+FlsSetValue
+CompareStringW
+LCMapStringW
+GetFileType
+OutputDebugStringW
+FindFirstFileExW
+FindNextFileW
+IsValidCodePage
+MultiByteToWideChar
+WideCharToMultiByte
+GetEnvironmentStringsW
+FreeEnvironmentStringsW
+SetEnvironmentVariableW
+SetStdHandle
+GetStringTypeW
+GetProcessHeap
+HeapReAlloc
+HeapQueryInformation
+WriteConsoleW
+FlushFileBuffers
+GetConsoleOutputCP
+GetConsoleMode
+GetFileSizeEx
+SetFilePointerEx
+CloseHandle
+CreateFileW
+KERNEL32.dll
+                          
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                          
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+.?AVbad_exception@std@@
+.?AVexception@std@@
+.?AVtype_info@@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+      <requestedPrivileges>
+        <requestedExecutionLevel level='asInvoker' uiAccess='false' />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

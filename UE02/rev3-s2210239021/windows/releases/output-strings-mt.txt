@@ -1,0 +1,201 @@
+!This program cannot be run in DOS mode.
+WATAUAVAWH
+WATAUAVAWH
+ A_A^A]A\_
+WATAUAVAWH
+UVWATAUAVAWH
+`A_A^A]A\_^]
+@USVWATAUAVAWH
+A_A^A]A\_^[]
+UVWATAUAVAWH
+A_A^A]A\_^]
+@SVWATAUAVAWH
+pA_A^A]A\_^[
+SVWATAUAVAWH
+0A_A^A]A\_^[
+t$ WATAUAVAWH
+ A_A^A]A\_
+WATAUAVAWH
+0A_A^A]A\_
+<htl<jt\<lt4<tt$<wt
+WATAUAVAWH
+ A_A^A]A\_
+WATAUAVAWH
+ A_A^A]A\_
+t$ WATAUAVAWH
+UVWATAUAVAWH
+PA_A^A]A\_^]
+WATAUAVAWH
+0A_A^A]A\_
+@USVWATAUAVH
+A^A]A\_^[]
+l$ VWATAVAWH
+L$&8\$&t,8Y
+UVWATAUAVAWH
+0A_A^A]A\_^]
+@UATAUAVAWH
+e0A_A^A]A\]
+t$ WATAUAVAWH
+UVWATAUAVAWH
+A_A^A]A\_^]
+VATAUAVAWH
+0A_A^A]A\^
+@USVWATAUAVAWH
+xA_A^A]A\_^[]
+SUVWATAVAWH
+A_A^A\_^][
+@USVWATAVAWH
+A_A^A\_^[]
+WATAUAVAWH
+0A_A^A]A\_
+@UATAUAVAWH
+VATAUAVAWH
+0A_A^A]A\^
+@SUVWATAVAWH
+@A_A^A\_^][
+@USVWATAUAVAWH
+eHA_A^A]A\_^[]
+__thiscall
+__fastcall
+__vectorcall
+__restrict
+__unaligned
+`local static guard'
+`vbase destructor'
+`vector deleting destructor'
+`default constructor closure'
+`scalar deleting destructor'
+`vector constructor iterator'
+`vector destructor iterator'
+`vector vbase constructor iterator'
+`virtual displacement map'
+`eh vector constructor iterator'
+`eh vector destructor iterator'
+`eh vector vbase constructor iterator'
+`copy constructor closure'
+`udt returning'
+`local vftable'
+`local vftable constructor closure'
+`omni callsig'
+`placement delete closure'
+`placement delete[] closure'
+`managed vector constructor iterator'
+`managed vector destructor iterator'
+`eh vector copy constructor iterator'
+`eh vector vbase copy constructor iterator'
+`dynamic initializer for '
+`dynamic atexit destructor for '
+`vector copy constructor iterator'
+`vector vbase copy constructor iterator'
+`managed vector copy constructor iterator'
+`local static thread guard'
+operator "" 
+operator co_await
+operator<=>
+ Type Descriptor'
+ Base Class Descriptor at (
+ Base Class Array'
+ Class Hierarchy Descriptor'
+ Complete Object Locator'
+`anonymous namespace'
+FlsGetValue
+FlsSetValue
+InitializeCriticalSectionEx
+Unknown exception
+bad exception
+CorExitProcess
+AreFileApisANSI
+CompareStringEx
+LCMapStringEx
+LocaleNameToLCID
+AppPolicyGetProcessTerminationMethod
+dddd, MMMM dd, yyyy
+ !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+BC?>6t9^	c:>
+C:\Users\admin_sin\Desktop\rev3-s2210239021\infected\x64\Release\infected.pdb
+.text$mn$00
+.rdata$voltmd
+.rdata$zzzdbg
+RtlCaptureContext
+RtlLookupFunctionEntry
+RtlVirtualUnwind
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetCurrentProcess
+TerminateProcess
+IsProcessorFeaturePresent
+QueryPerformanceCounter
+GetCurrentProcessId
+GetCurrentThreadId
+GetSystemTimeAsFileTime
+InitializeSListHead
+IsDebuggerPresent
+GetStartupInfoW
+GetModuleHandleW
+RtlUnwindEx
+GetLastError
+SetLastError
+EnterCriticalSection
+LeaveCriticalSection
+DeleteCriticalSection
+InitializeCriticalSectionAndSpinCount
+TlsGetValue
+TlsSetValue
+FreeLibrary
+GetProcAddress
+LoadLibraryExW
+EncodePointer
+RaiseException
+RtlPcToFileHeader
+GetStdHandle
+GetModuleFileNameW
+ExitProcess
+GetModuleHandleExW
+GetCommandLineA
+GetCommandLineW
+FlsGetValue
+FlsSetValue
+CompareStringW
+LCMapStringW
+GetFileType
+FindFirstFileExW
+FindNextFileW
+IsValidCodePage
+MultiByteToWideChar
+WideCharToMultiByte
+GetEnvironmentStringsW
+FreeEnvironmentStringsW
+SetEnvironmentVariableW
+SetStdHandle
+GetStringTypeW
+GetProcessHeap
+FlushFileBuffers
+GetConsoleOutputCP
+GetConsoleMode
+GetFileSizeEx
+SetFilePointerEx
+HeapReAlloc
+CloseHandle
+CreateFileW
+WriteConsoleW
+KERNEL32.dll
+                          
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+                          
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+.?AVbad_exception@std@@
+.?AVexception@std@@
+.?AVtype_info@@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+      <requestedPrivileges>
+        <requestedExecutionLevel level='asInvoker' uiAccess='false' />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>

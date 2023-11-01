@@ -55,8 +55,8 @@ skipbelow=\baselineskip, % Space below the frame
 \newcommand{\LVA}{Reverse Engineering}
 \newcommand{\LVAKURZ}{REV3}
 \newcommand{\SEMESTER}{WS 2023/2024}
-\newcommand{\UELABEL}{UE 01}
-\newcommand{\UETITLE}{Schutzmechanismen}
+\newcommand{\UELABEL}{UE 02}
+\newcommand{\UETITLE}{Statische Analyse}
 \newcommand{\AUTHOR}{Jakob Mayr}
 
 
@@ -95,13 +95,12 @@ skipbelow=\baselineskip, % Space below the frame
 	\fancyfoot[R]{\AUTHOR}
 	
 	\section{Einleitung}
-	Folglich werden 4 Files "hello[1-4].exe", analysiert, deren Schutz "geknackt" und verändert, sodass sie "SIB22" anstatt "Hello" ausgeben.\\
-	Zu erzielende Ausgabe:\\
+	...\\
 	\includegraphics[width=0.25\linewidth]{pictures/SIB22}		
 	
 	\pagebreak
 	
-	\section{Verschlüsselung/Komprimierung}
+	\section{Aufgabe 1 - Statische Analyse Windows}
 	\subsection{hello1.exe}
 	Das PE-File "hello1.exe" verwendet für die "Entschlüsselung" eine XOR-Operation über einen Addressbereich im Datensegment.\\
 	Das EBX-Register stellt für die "Entschlüsselung" den Zähler dar (Adressbereich wird von größter zu kleinster Adresse durchiteriert). Die Startadresse (401017) + "Wert im EBX-Register" zeigt auf das jeweilige zu entschlüsselnde Byte und durch das dekrementieren des EBX-Registers werden all 33 Bytes "entschlüsselt".\\
@@ -230,6 +229,8 @@ skipbelow=\baselineskip, % Space below the frame
 	Das PE-File kann auch via CommandLine entpackt werden und anschließend kann in radare2 nach dem Hex-Wert für "Hello" gesucht werden und dieser ausgegeben werden:\cite{radare2}\\
 	\includegraphics[width=0.5\linewidth]{pictures/hello4-upx-decompress}
 	\includegraphics[width=0.5\linewidth]{pictures/hello4-radare2}\\
+	Ebenfalls kann im komprimierten File der Einsprungspunkt und somit der Beginn der UPX-Entschlüsselung betrachtet werden:\\
+	\includegraphics[width=0.5\linewidth]{pictures/hello4-entry-point}\\
 	
 	\begin{thebibliography}{9}
 		

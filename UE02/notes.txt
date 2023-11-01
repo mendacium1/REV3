@@ -1,0 +1,4 @@
+1.Aufgabe)
+Code schreiben
+Kompilieren mit unterschiedlichen "Runtime Library" Einstellungen
+Analysen der 4 Files mit dumpbin/strings:
