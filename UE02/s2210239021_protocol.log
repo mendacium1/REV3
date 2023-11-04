@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.10.17)  24 OCT 2023 17:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.10.17)  4 NOV 2023 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -773,12 +773,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 73.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 73.
-<fhooe_logo.jpg, id=35, 154.176pt x 93.4692pt>
+<fhooe_logo.jpg, id=7, 154.176pt x 93.4692pt>
 File: fhooe_logo.jpg Graphic file (type jpg)
 <use fhooe_logo.jpg>
 Package pdftex.def Info: fhooe_logo.jpg  used on input line 77.
 (pdftex.def)             Requested size: 154.1756pt x 93.46896pt.
-<si_logo.jpg, id=36, 207.6558pt x 43.6029pt>
+<si_logo.jpg, id=8, 207.6558pt x 43.6029pt>
 File: si_logo.jpg Graphic file (type jpg)
 <use si_logo.jpg>
 Package pdftex.def Info: si_logo.jpg  used on input line 82.
@@ -791,137 +791,206 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--100
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./fhooe_logo.jpg> <./si_lo
-go.jpg>] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+go.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
+
+ []
+
+[2] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-<pictures/1. setting runtime library.png, id=46, 711.15688pt x 468.24937pt>
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+<pictures/1. setting runtime library.png, id=60, 711.15688pt x 468.24937pt>
 File: pictures/1. setting runtime library.png Graphic file (type png)
 <use pictures/1. setting runtime library.png>
 Package pdftex.def Info: pictures/1. setting runtime library.png  used on input
- line 113.
+ line 172.
 (pdftex.def)             Requested size: 315.68132pt x 207.85945pt.
-<pictures/1. all files.png, id=48, 378.41376pt x 194.22563pt>
+<pictures/1. all files.png, id=62, 378.41376pt x 194.22563pt>
 File: pictures/1. all files.png Graphic file (type png)
 <use pictures/1. all files.png>
-Package pdftex.def Info: pictures/1. all files.png  used on input line 115.
+Package pdftex.def Info: pictures/1. all files.png  used on input line 174.
 (pdftex.def)             Requested size: 225.48764pt x 115.73608pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--116
+Underfull \hbox (badness 10000) in paragraph at lines 171--175
+
+ []
+
+[3 <./pictures/1. setting runtime library.png> <./pictures/1. all files.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--116
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-[2 <./pictures/1. setting runtime library.png> <./pictures/1. all files.png>]
-<pictures/1. dumpbin mt.png, id=67, 480.79625pt x 243.91125pt>
+<pictures/1. dumpbin mt.png, id=82, 480.79625pt x 243.91125pt>
 File: pictures/1. dumpbin mt.png Graphic file (type png)
 <use pictures/1. dumpbin mt.png>
-Package pdftex.def Info: pictures/1. dumpbin mt.png  used on input line 123.
+Package pdftex.def Info: pictures/1. dumpbin mt.png  used on input line 186.
 (pdftex.def)             Requested size: 202.9375pt x 102.9519pt.
-<pictures/1. dumpbin mtd.png, id=68, 483.8075pt x 236.885pt>
+<pictures/1. dumpbin mtd.png, id=83, 483.8075pt x 236.885pt>
 File: pictures/1. dumpbin mtd.png Graphic file (type png)
 <use pictures/1. dumpbin mtd.png>
-Package pdftex.def Info: pictures/1. dumpbin mtd.png  used on input line 129.
+Package pdftex.def Info: pictures/1. dumpbin mtd.png  used on input line 192.
 (pdftex.def)             Requested size: 202.9375pt x 99.3645pt.
-<pictures/1. dumpbin md.png, id=69, 482.30188pt x 232.36812pt>
+<pictures/1. dumpbin md.png, id=84, 482.30188pt x 232.36812pt>
 File: pictures/1. dumpbin md.png Graphic file (type png)
 <use pictures/1. dumpbin md.png>
-Package pdftex.def Info: pictures/1. dumpbin md.png  used on input line 137.
+Package pdftex.def Info: pictures/1. dumpbin md.png  used on input line 200.
 (pdftex.def)             Requested size: 202.9375pt x 97.77121pt.
-<pictures/1. dumpbin mdd.png, id=70, 483.30562pt x 226.34563pt>
+<pictures/1. dumpbin mdd.png, id=85, 483.30562pt x 226.34563pt>
 File: pictures/1. dumpbin mdd.png Graphic file (type png)
 <use pictures/1. dumpbin mdd.png>
-Package pdftex.def Info: pictures/1. dumpbin mdd.png  used on input line 143.
+Package pdftex.def Info: pictures/1. dumpbin mdd.png  used on input line 206.
 (pdftex.def)             Requested size: 202.9375pt x 95.04033pt.
 
-[3 <./pictures/1. dumpbin mt.png> <./pictures/1. dumpbin mtd.png> <./pictures/1
+Overfull \hbox (2.33109pt too wide) in paragraph at lines 214--217
+\OT1/cmr/m/n/10 Die dy-namisch ver-link-ten Ver-sio-nen (infected-md.exe und in
+fected-MDd.exe) sind im All-ge-meinen kleiner,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--217
+
+ []
+
+[4 <./pictures/1. dumpbin mt.png> <./pictures/1. dumpbin mtd.png> <./pictures/1
 . dumpbin md.png> <./pictures/1. dumpbin mdd.png>]
-<pictures/1. strings from all files.png, id=82, 1879.02pt x 1127.21124pt>
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
+21.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 221.
+<pictures/1. strings from all files.png, id=99, 1879.02pt x 1127.21124pt>
 File: pictures/1. strings from all files.png Graphic file (type png)
 <use pictures/1. strings from all files.png>
 Package pdftex.def Info: pictures/1. strings from all files.png  used on input 
-line 154.
+line 223.
 (pdftex.def)             Requested size: 450.97528pt x 270.53622pt.
-<pictures/1. strings from all files.2.png, id=83, 1877.0125pt x 1140.26pt>
+<pictures/1. strings from all files.2.png, id=100, 1877.0125pt x 1140.26pt>
 File: pictures/1. strings from all files.2.png Graphic file (type png)
 <use pictures/1. strings from all files.2.png>
 Package pdftex.def Info: pictures/1. strings from all files.2.png  used on inpu
-t line 156.
+t line 225.
 (pdftex.def)             Requested size: 450.97528pt x 273.94637pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--157
+Underfull \hbox (badness 10000) in paragraph at lines 221--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--157
+Underfull \hbox (badness 10000) in paragraph at lines 221--226
 
  []
 
-[4 <./pictures/1. strings from all files.png (PNG copy)> <./pictures/1. strings
+[5 <./pictures/1. strings from all files.png (PNG copy)> <./pictures/1. strings
  from all files.2.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+<pictures/1. example imports.png, id=108, 753.81625pt x 476.78125pt>
+File: pictures/1. example imports.png Graphic file (type png)
+<use pictures/1. example imports.png>
+Package pdftex.def Info: pictures/1. example imports.png  used on input line 23
+1.
+(pdftex.def)             Requested size: 425.97525pt x 269.42555pt.
+ [6 <./pictures/1. example imports.png (PNG copy)>]
+File: pictures/1. dumpbin md.png Graphic file (type png)
+<use pictures/1. dumpbin md.png>
+Package pdftex.def Info: pictures/1. dumpbin md.png  used on input line 261.
+(pdftex.def)             Requested size: 425.97525pt x 205.23624pt.
+
+Overfull \hbox (3.33333pt too wide) in paragraph at lines 259--262
+[][] 
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 305--307
 
  []
 
-<pictures/2. compile files.png, id=89, 919.435pt x 239.89626pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--323
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
+
+ []
+
+<pictures/2. compile files.png, id=188, 919.435pt x 239.89626pt>
 File: pictures/2. compile files.png Graphic file (type png)
 <use pictures/2. compile files.png>
-Package pdftex.def Info: pictures/2. compile files.png  used on input line 173.
+Package pdftex.def Info: pictures/2. compile files.png  used on input line 340.
 
 (pdftex.def)             Requested size: 315.68132pt x 82.36896pt.
-<pictures/2. all files.png, id=90, 919.435pt x 237.88875pt>
+<pictures/2. all files.png, id=189, 919.435pt x 237.88875pt>
 File: pictures/2. all files.png Graphic file (type png)
 <use pictures/2. all files.png>
-Package pdftex.def Info: pictures/2. all files.png  used on input line 175.
+Package pdftex.def Info: pictures/2. all files.png  used on input line 342.
 (pdftex.def)             Requested size: 225.48764pt x 58.33951pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--176
+Underfull \hbox (badness 10000) in paragraph at lines 339--343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--176
+Underfull \hbox (badness 10000) in paragraph at lines 339--343
 
  []
 
-[5 <./pictures/2. compile files.png (PNG copy)> <./pictures/2. all files.png (P
-NG copy)>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 185.
+(Font)              <7> on input line 349.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 185.
- [6] (./s2210239021_protocol.aux)
+(Font)              <5> on input line 349.
+[9 <./pictures/2. compile files.png (PNG copy)> <./pictures/2. all files.png (P
+NG copy)>] (./s2210239021_protocol.aux)
 Package rerunfilecheck Info: File `s2210239021_protocol.out' has not changed.
-(rerunfilecheck)             Checksum: 62C82E25C511D84146197B9E53DAEDFE;988.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23794 strings out of 477277
- 443517 string characters out of 5816798
- 1875793 words of memory out of 6000000
- 43519 multiletter control sequences out of 15000+600000
- 517522 words of font info for 50 fonts, out of 8000000 for 9000
+ 24002 strings out of 477277
+ 445855 string characters out of 5816798
+ 1971793 words of memory out of 6000000
+ 43622 multiletter control sequences out of 15000+600000
+ 517830 words of font info for 51 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 100i,11n,104p,514b,1227s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmtt8.pfb>
-Output written on s2210239021_protocol.pdf (6 pages, 1086557 bytes).
+ 100i,11n,104p,573b,1260s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+t8.pfb>
+Output written on s2210239021_protocol.pdf (9 pages, 1164247 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 284 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
+ 131 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

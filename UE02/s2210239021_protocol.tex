@@ -95,14 +95,72 @@ skipbelow=\baselineskip, % Space below the frame
 	\fancyfoot[L]{Seite \thepage\ von \pageref{LastPage}}
 	\fancyfoot[R]{\AUTHOR}
 	
-	\section{Einleitung}
+	\section*{Einleitung}
 	...\\
 	
 	\pagebreak
 	
-	\section{Aufgabe 1 - Statische Analyse Windows}
-	\subsection{create file}
-		\begin{lstlisting}[language=c]
+	\section*{Aufgabe 1 - Statische Analyse Windows}
+	\subsection*{Erstellen der Dateien}
+	In Aufgabe 1 ist eine Anwendung, welche "infected" auf \texttt{stdout} ausgibt in \texttt{c} zu schreiben und mit Visual Studio auf 4 verschiedene Varianten zu bauen.\\
+	Die vier Varianten mit deren Eigenschaften und Unterschieden (Quelle: \href{https://chat.openai.com}{ChatGPT}):\\
+	\begin{enumerate}
+		\item \textbf{Static Release (/MT)}:
+		\begin{enumerate}
+			\item Laufzeitbibliothek: Statisch
+			\item Debug-Informationen: Nein
+			\item Eigenschaften:
+			\begin{enumerate}
+				\item Die Laufzeitbibliothek wird in die ausführbare Datei eingebettet.
+				\item Größere Dateigröße, da der Code der CRT (C Runtime Library) direkt in die Anwendung eingefügt wird.
+				\item Keine Abhängigkeit von DLLs (Dynamically Linked Libraries) zur Laufzeit.
+				\item Optimiert für Geschwindigkeit und nicht für das Debugging.
+			\end{enumerate}
+		\end{enumerate}
+		\item \textbf{Static Debug (/MTd)}:
+		\begin{enumerate}
+			\item Laufzeitbibliothek: Statisch
+			\item Debug-Informationen: Ja
+			\item Eigenschaften:
+			\begin{enumerate}
+				\item Ähnlich wie /MT, aber mit zusätzlichen Debug-Informationen und weniger Optimierungen.
+				\item Erleichtert das Debugging, da Variablen leichter überwacht werden können.
+				\item Größerer Speicherbedarf und langsamere Ausführung im Vergleich zur Release-Version.
+			\end{enumerate}
+		\end{enumerate}
+		\item \textbf{Dynamic Relase (/MD)}:
+		\begin{enumerate}
+			\item Laufzeitbibliothek: Dynamisch
+			\item Debug-Informationen: Nein
+			\item Eigenschaften:
+			\begin{enumerate}
+				\item Verlinkt dynamisch mit den CRT-DLLs (Z.B. msvcrXXX.dll).
+				\item Kleinere Dateigröße, da die Laufzeitbibliothek nicht eingebettet ist.
+				\item Erfordert, dass die CRT-DLLs zur Laufzeit verfügbar sind.
+				\item Optimiert für Geschwindigkeit.
+			\end{enumerate}
+		\end{enumerate}
+		\item \textbf{Dynamic Debug (/MDd)}:
+		\begin{enumerate}
+			\item Laufzeitbibliothek: Dynamisch
+			\item Debug-Informationen: Ja
+			\item Eigenschaften:
+			\begin{enumerate}
+				\item Ähnlich wie /MD, aber mit zusätzlichen Debug-Informationen und weniger Optimierungen.
+				\item Erleichter das Debugging.
+				\item Erfodert, dass die Debug-Version der CRT-DLLs zur Laufzeit verfügbar ist.
+			\end{enumerate}
+		\end{enumerate}
+	\end{enumerate}
+	
+	\textbf{Unterschiede:}\\
+	\begin{enumerate}
+		\item \textbf{Statische vs. Dynamische Verlinkung}: /MT und /MTd binden die Laufzeitbibliothek statisch ein, wodurch die ausführbare Datei unabhängig von externen DLLs ist. /MD und /MDd verlinken dynamisch und erfordern, dass die entsprechenden DLLs zur Laufzeit vorhanden sind.
+		\item \textbf{Debug vs. Release}: Die Debug-Optionen (/MTd und /MDd) enthalten zusätzliche Debug-Informationen und sind nicht so stark optimiert wie die Release-Optionen (/MT und /MD), was das Debugging erleichtert, aber die Leistung beeinträchtigen kann. 
+	\end{enumerate}
+	
+	\noindent \textbf{Der Programm-Code für die gewünschte Executable:}\\
+	\begin{lstlisting}[language=c]
 		#include <stdio.h>
 		
 		int main() {
@@ -110,13 +168,18 @@ skipbelow=\baselineskip, % Space below the frame
 			return = 0;
 		}
 	\end{lstlisting}
+	In den Einstellungen des Visual Studio Projekts kann die gewünschte Variante für die "Runtime Library" ausgewählt werden:\\
 	\includegraphics[width=0.7\linewidth]{pictures/1. setting runtime library.png}\\
-	\\
+	Die Files nach erstellen, hier ist direkt ersichtlich, dass beide statischen Varianten größer sind (Length), da sich der Code der Libraries im File befindet:\\
 	\includegraphics[width=0.5\linewidth]{pictures/1. all files.png}\\
 	
 	\pagebreak
+	\subsection*{Analyse der Dateien}
+	Um die erzeugten Executables zu analysieren sollen zumindest die Tools \texttt{dumpbin} und \texttt{strings} verwendet werden.\\
+	\subsection*{dumpbin}
+	\texttt{dumpbin} ist ein Command-Line Tool, zur Verfügung gestellt von \texttt{Microsoft Visual Studio} um PE-Files (Portable Executable) zu analysieren. Es können beispielsweise die flags \textbf{/DEPENDENTS}, \textbf{/EXPORTS}, \textbf{/HEADERS} oder \textbf{/ALL} verwendet werden, um alle vom Tool lieferbaren Informationen zu erhalten.\\
 	
-	\subsection{dumpbin}
+	\noindent Folgende Aufrufe zeigen die Ausgabe ohne Parameter:\\
 	\begin{figure}[htp]
 		\centering
 		\begin{subfigure}[b]{0.45\textwidth}
@@ -148,18 +211,122 @@ skipbelow=\baselineskip, % Space below the frame
 		\label{fig:grid}
 	\end{figure}
 	
+	\noindent Die Debug-Versionen (infected-MDd.exe und infected-mtd.exe) haben tendenziell größere .text Sektionen als ihre entsprechenden Release-Versionen, da sie zusätzliche Debug-Informationen enthalten.\\
+	Die statisch verlinkten Versionen (infected-mt.exe und infected-mtd.exe) haben größere .text und .rdata Sektionen im Vergleich zu den dynamisch verlinkten Versionen, da die C Runtime Library direkt in die ausführbare Datei eingebettet ist.\\
+	Die dynamisch verlinkten Versionen (infected-md.exe und infected-MDd.exe) sind im Allgemeinen kleiner, weil sie zur Laufzeit externe DLLs verwenden.\\
+	
 	\pagebreak
 	
-	\subsection{strings}
+	\subsection*{strings}
+	Der Befehl strings wird verwendet, um alle druckbaren Zeichenfolgen in einer Binärdatei zu extrahieren und anzuzeigen. Eine Zeichenfolge in diesem Kontext ist eine Sequenz von druckbaren Zeichen, die typischerweise durch Null-Bytes (\textbackslash0) oder durch nicht-druckbare Zeichen getrennt ist. Dieses Tool ist nützlich, um Text, Pfade, URLs, Versionen und andere Informationen aus ausführbaren Dateien, Bibliotheken oder beliebigen Binärdateien zu extrahieren.\\
+	Folgende zwei screenshots zeigen sowohl den Anfang als auch das Ende der 4 verscheidenen Files:\\
 	\includegraphics[width=1\linewidth]{pictures/1. strings from all files}\\
 	\\
 	\includegraphics[width=1\linewidth]{pictures/1. strings from all files.2}\\
 	
+	\subsection*{Fragen}
+	\begin{enumerate}
+		\item Welche Imports werden verwendet?\\
+		Durch den Aufruf von \texttt{dumpbin /IMPORTS <PE-filename>} können die Imports ermittelt werden:\\
+		\includegraphics[width=1\linewidth]{pictures/1. example imports}
+		\begin{enumerate}
+			\item infected-mt.exe
+			\begin{enumerate}
+				\item KERNEL32.dll
+			\end{enumerate}
+			\item infected-mtd.exe
+			\begin{enumerate}
+				\item KERNEL32.dll
+			\end{enumerate}
+			\item infected-md.exe
+			\begin{enumerate}
+				\item VCRUNTIME140.dll
+				\item api-ms-win-crt-stdio-l1-1-0.dll
+				\item api-ms-win-crt-runtime-l1-1-0.dll
+				\item api-ms-win-crt-math-l1-1-0.dll
+				\item api-ms-win-crt-locale-l1-1-0.dll
+				\item api-ms-win-crt-heap-l1-1-0.dll
+				\item KERNEL32.dll
+			\end{enumerate}
+			\item infected-MDd.exe
+			\begin{enumerate}
+				\item VCRUNTIME140D.dll
+				\item ucrtbased.dll
+				\item KERNEL32.dll
+			\end{enumerate}
+		\end{enumerate}
+		\pagebreak
+		\item Welche Sektionen werden verwedent?\\
+		Durch den Aufruf von \texttt{dumpbin <PE-filename>} können die Sektionen ermittelt werden:\\
+		\includegraphics[width=1\linewidth]{pictures/1. dumpbin md}¸
+		\begin{enumerate}
+			\item infected-mt.exe
+			\begin{enumerate}
+				\item .text
+				\item .rdata
+				\item .data
+				\item .pdata
+				\item \_RDATA
+				\item .rsrc
+				\item .reloc
+			\end{enumerate}
+			\item infected-mtd.exe
+			\begin{enumerate}
+				\item .text
+				\item .rdata
+				\item .data
+				\item .pdata
+				\item \_RDATA
+				\item .rsrc
+				\item .reloc
+			\end{enumerate}
+			\item infected-md.exe
+			\begin{enumerate}
+				\item .text
+				\item .rdata
+				\item .data
+				\item .pdata
+				\item .rsrc
+				\item .reloc
+			\end{enumerate}
+			\item infected-MDd.exe
+			\begin{enumerate}
+				\item .text
+				\item .rdata
+				\item .data
+				\item .pdata
+				\item .rsrc
+				\item .reloc
+			\end{enumerate}
+		\end{enumerate}
+		
+		\pagebreak
+		
+		\item Was kannst du über die*den Author*in sagen?
+		Ein direkter Author ist nicht erkennbar. Allerdings könnte man auf "admin\_sin" schließen, da das File für die "Program Database" (infected.pbd) im Pfad den User nennt:\\
+		\begin{lstlisting}[language=c]
+			 Debug Directories
+			
+			Time Type        Size      RVA  Pointer
+			-------- ------- -------- -------- --------
+			6537D1B0 cv            66 00003464     2264    Format: RSDS, {6F72B84A-D687-4743-A104-E88EF40E7E96}, 4, C:\Users\admin_sin\Desktop\rev3-s2210239021\infected\x64\Release\infected.pdb
+			6537D1B0 feat          14 000034CC     22CC    Counts: Pre-VC++ 11.00=0, C/C++=30, /GS=30, /sdl=1, guardN=29
+			6537D1B0 coffgrp      284 000034E0     22E0    4C544347 (LTCG)
+			6537D1B0 iltcg          0 00000000        0
+			
+		\end{lstlisting}
+		
+		\noindent Dies ist in allen Files gleich herauszulesen.\\
+		
+		\item Was kannst du über die Umgebung, in der das Sample erzeugt wurde, sagen?\\
+		Auskünfte über die Umgebung können durch die Compiler-Version, eingebettete Ressourcen oder Abhängigkeiten und der weiteren gegeben werden.\\
+		
+	\end{enumerate}
 	
 	\pagebreak
 	
-	\section{2. Aufgabe - Statische Analyse Linux}
-	\subsection{create file}
+	\section*{2. Aufgabe - Statische Analyse Linux}
+	\subsection*{create file}
 	Gleicher code wie zuvor:\\
 	\begin{lstlisting}[language=c]
 		#include <stdio.h>
@@ -173,10 +340,7 @@ skipbelow=\baselineskip, % Space below the frame
 	\includegraphics[width=0.7\linewidth]{pictures/2. compile files}\\
 	\\
 	\includegraphics[width=0.5\linewidth]{pictures/2. all files}\\
-	
-	\pagebreak
-	
-	
+		
 	\begin{thebibliography}{9}
 		
 		\bibitem{radare2}
