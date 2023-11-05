@@ -153,6 +153,8 @@ skipbelow=\baselineskip, % Space below the frame
 		\end{enumerate}
 	\end{enumerate}
 	
+	\pagebreak
+	
 	\textbf{Unterschiede:}\\
 	\begin{enumerate}
 		\item \textbf{Statische vs. Dynamische Verlinkung}: /MT und /MTd binden die Laufzeitbibliothek statisch ein, wodurch die ausführbare Datei unabhängig von externen DLLs ist. /MD und /MDd verlinken dynamisch und erfordern, dass die entsprechenden DLLs zur Laufzeit vorhanden sind.
@@ -226,7 +228,7 @@ skipbelow=\baselineskip, % Space below the frame
 	
 	\subsection*{Fragen}
 	\begin{enumerate}
-		\item Welche Imports werden verwendet?\\
+		\item \textbf{Welche Imports werden verwendet?}\\
 		Durch den Aufruf von \texttt{dumpbin /IMPORTS <PE-filename>} können die Imports ermittelt werden:\\
 		\includegraphics[width=1\linewidth]{pictures/1. example imports}
 		\begin{enumerate}
@@ -256,9 +258,9 @@ skipbelow=\baselineskip, % Space below the frame
 			\end{enumerate}
 		\end{enumerate}
 		\pagebreak
-		\item Welche Sektionen werden verwedent?\\
+		\item \textbf{Welche Sektionen werden verwedent?}\\
 		Durch den Aufruf von \texttt{dumpbin <PE-filename>} können die Sektionen ermittelt werden:\\
-		\includegraphics[width=1\linewidth]{pictures/1. dumpbin md}¸
+		\includegraphics[width=1\linewidth]{pictures/1. dumpbin md}
 		\begin{enumerate}
 			\item infected-mt.exe
 			\begin{enumerate}
@@ -302,7 +304,7 @@ skipbelow=\baselineskip, % Space below the frame
 		
 		\pagebreak
 		
-		\item Was kannst du über die*den Author*in sagen?
+		\item \textbf{Was kannst du über die*den Author*in sagen?}
 		Ein direkter Author ist nicht erkennbar. Allerdings könnte man auf "admin\_sin" schließen, da das File für die "Program Database" (infected.pbd) im Pfad den User nennt:\\
 		\begin{lstlisting}[language=c]
 			 Debug Directories
@@ -318,10 +320,134 @@ skipbelow=\baselineskip, % Space below the frame
 		
 		\noindent Dies ist in allen Files gleich herauszulesen.\\
 		
-		\item Was kannst du über die Umgebung, in der das Sample erzeugt wurde, sagen?\\
-		Auskünfte über die Umgebung können durch die Compiler-Version, eingebettete Ressourcen oder Abhängigkeiten und der weiteren gegeben werden.\\
-		
+		\item \textbf{Was kannst du über die Umgebung, in der das Sample erzeugt wurde, sagen?}\\
+		Auskünfte über die Umgebung können durch die Compiler-Version, eingebettete Ressourcen oder Abhängigkeiten und der Weiteren gegeben werden.\\
+		\textbf{HEADERS}\\
+		Durch den Aufruf von \texttt{dumpbin /HEADERS <PE-filename>} können mehrere Informationen über die Umgebung herausgefunden werden:\\
+		\includegraphics[width=1\linewidth]{pictures/1. umgebung}\\
+		(Der Screenshot zeigt nur den Beginn des outputs...)\\
+		Folgende Informationen können über die Files gefunden werden:\\
+		\begin{enumerate}
+			\item infected-mt.exe
+			\begin{enumerate}
+				\item \textbf{Architektur:} 8664 machine (x64)
+				\item \textbf{Linker-Version}: 14.36 (typisch für Visual Studio-Version)
+				\item \textbf{Zeitstempel}: Tue Oct 24 16:10:20 2023
+				\item \textbf{Subsystem}: Windows CUI (Konsolenanwendung)
+				\item \textbf{DLL-Charakteristika}:\\
+				Kompatibel mit "High Entropy Virtual Addresses", "Dynamic Base", "NX (No eXecute)", "Terminal Server Aware".\\
+				Diese Eigenschaften sind Sicherheitsmerkmale, die oft in modernen Anwendungen verwendet werden.
+				\item Speicherreservierung: Die Größen für Stack- und Heap-Reservierung und -Commit sind angegeben, was Hinweise auf den für die Ausführung der Anwendung benötigten Speicher gibt.
+				\item \textbf{Verzeichnisse und Sektionen}: Verschiedene Verzeichnisse wie das Importverzeichnis, das Resourceverzeichnis, das Exceptionverzeichnis usw. sind aufgelistet. Diese geben Informationen über die Struktur der ausführbaren Datei und welche externen Funktionen oder Ressourcen sie verwendet.\\
+				Beispielseweise nur für mt-Version angeführt:\\
+				\begin{lstlisting}[language=c]
+						              10 number of directories
+						0 [       0] RVA [size] of Export Directory
+						28DC [      A0] RVA [size] of Import Directory
+						5000 [     1E0] RVA [size] of Resource Directory
+						4000 [     174] RVA [size] of Exception Directory
+						0 [       0] RVA [size] of Certificates Directory
+						6000 [      30] RVA [size] of Base Relocation Directory
+						23A0 [      70] RVA [size] of Debug Directory
+						0 [       0] RVA [size] of Architecture Directory
+						0 [       0] RVA [size] of Global Pointer Directory
+						0 [       0] RVA [size] of Thread Storage Directory
+						2260 [     140] RVA [size] of Load Configuration Directory
+						0 [       0] RVA [size] of Bound Import Directory
+						2000 [     1A0] RVA [size] of Import Address Table Directory
+						0 [       0] RVA [size] of Delay Import Directory
+						0 [       0] RVA [size] of COM Descriptor Directory
+						0 [       0] RVA [size] of Reserved Directory
+				\end{lstlisting}
+				\item \textbf{Betriebssystem- und Subsystem-Version}: Das Betriebssystem und das Subsystem sind auf Version 6.00 eingestellt. Dies könnte auf eine Kompatibilität mit bestimmten Windows-Versionen hinweisen (z.B. Windows Vista, 7, 8, 10), die alle NT 6.x-Versionen sind.
+				\item \textbf{Art der Ausführbaren}: Die Ausführbare ist als "Executable" markiert, was darauf hindeutet, dass es sich um eine Standard-Ausführbare (und nicht um eine DLL) handelt.
+			\end{enumerate}
+			\item infected-mtd.exe
+			\begin{enumerate}
+				\item \textbf{Architektur:} 8664 machine (x64)
+				\item \textbf{Linker-Version}: 14.36 (typisch für Visual Studio-Version)
+				\item \textbf{Zeitstempel}: Tue Oct 24 16:14:17 2023
+				\item \textbf{Subsystem}: Windows CUI (Konsolenanwendung)
+				\item \textbf{DLL-Charakteristika}:\\
+				Kompatibel mit "High Entropy Virtual Addresses", "Dynamic Base", "NX (No eXecute)", "Terminal Server Aware".\\
+				Diese Eigenschaften sind Sicherheitsmerkmale, die oft in modernen Anwendungen verwendet werden.
+				\item Speicherreservierung: Die Größen für Stack- und Heap-Reservierung und -Commit sind angegeben, was Hinweise auf den für die Ausführung der Anwendung benötigten Speicher gibt.
+				\item \textbf{Verzeichnisse und Sektionen}: Verschiedene Verzeichnisse wie das Importverzeichnis, das Resourceverzeichnis, das Exceptionverzeichnis usw. sind aufgelistet. Diese geben Informationen über die Struktur der ausführbaren Datei und welche externen Funktionen oder Ressourcen sie verwendet.
+				\item \textbf{Betriebssystem- und Subsystem-Version}: Das Betriebssystem und das Subsystem sind auf Version 6.00 eingestellt. Dies könnte auf eine Kompatibilität mit bestimmten Windows-Versionen hinweisen (z.B. Windows Vista, 7, 8, 10), die alle NT 6.x-Versionen sind.
+				\item \textbf{Art der Ausführbaren}: Die Ausführbare ist als "Executable" markiert, was darauf hindeutet, dass es sich um eine Standard-Ausführbare (und nicht um eine DLL) handelt.
+			\end{enumerate}
+			\item infected-md.exe
+			\begin{enumerate}
+				\item \textbf{Architektur:} 8664 machine (x64)
+				\item \textbf{Linker-Version}: 14.36 (typisch für Visual Studio-Version)
+				\item \textbf{Zeitstempel}: Tue Oct 24 16:15:34 2023
+				\item \textbf{Subsystem}: Windows CUI (Konsolenanwendung)
+				\item \textbf{DLL-Charakteristika}:\\
+				Kompatibel mit "High Entropy Virtual Addresses", "Dynamic Base", "NX (No eXecute)", "Terminal Server Aware".\\
+				Diese Eigenschaften sind Sicherheitsmerkmale, die oft in modernen Anwendungen verwendet werden.
+				\item Speicherreservierung: Die Größen für Stack- und Heap-Reservierung und -Commit sind angegeben, was Hinweise auf den für die Ausführung der Anwendung benötigten Speicher gibt.
+				\item \textbf{Verzeichnisse und Sektionen}: Verschiedene Verzeichnisse wie das Importverzeichnis, das Resourceverzeichnis, das Exceptionverzeichnis usw. sind aufgelistet. Diese geben Informationen über die Struktur der ausführbaren Datei und welche externen Funktionen oder Ressourcen sie verwendet.
+				\item \textbf{Betriebssystem- und Subsystem-Version}: Das Betriebssystem und das Subsystem sind auf Version 6.00 eingestellt. Dies könnte auf eine Kompatibilität mit bestimmten Windows-Versionen hinweisen (z.B. Windows Vista, 7, 8, 10), die alle NT 6.x-Versionen sind.
+				\item \textbf{Art der Ausführbaren}: Die Ausführbare ist als "Executable" markiert, was darauf hindeutet, dass es sich um eine Standard-Ausführbare (und nicht um eine DLL) handelt.
+			\end{enumerate}
+			\item infected-MDd.exe
+			\begin{enumerate}
+				\item \textbf{Architektur:} 8664 machine (x64)
+				\item \textbf{Linker-Version}: 14.36 (typisch für Visual Studio-Version)
+				\item \textbf{Zeitstempel}: Tue Oct 24 16:16:16 2023
+				\item \textbf{Subsystem}: Windows CUI (Konsolenanwendung)
+				\item \textbf{DLL-Charakteristika}:\\
+				Kompatibel mit "High Entropy Virtual Addresses", "Dynamic Base", "NX (No eXecute)", "Terminal Server Aware".\\
+				Diese Eigenschaften sind Sicherheitsmerkmale, die oft in modernen Anwendungen verwendet werden.
+				\item Speicherreservierung: Die Größen für Stack- und Heap-Reservierung und -Commit sind angegeben, was Hinweise auf den für die Ausführung der Anwendung benötigten Speicher gibt.
+				\item \textbf{Verzeichnisse und Sektionen}: Verschiedene Verzeichnisse wie das Importverzeichnis, das Resourceverzeichnis, das Exceptionverzeichnis usw. sind aufgelistet. Diese geben Informationen über die Struktur der ausführbaren Datei und welche externen Funktionen oder Ressourcen sie verwendet.
+				\item \textbf{Betriebssystem- und Subsystem-Version}: Das Betriebssystem und das Subsystem sind auf Version 6.00 eingestellt. Dies könnte auf eine Kompatibilität mit bestimmten Windows-Versionen hinweisen (z.B. Windows Vista, 7, 8, 10), die alle NT 6.x-Versionen sind.
+				\item \textbf{Art der Ausführbaren}: Die Ausführbare ist als "Executable" markiert, was darauf hindeutet, dass es sich um eine Standard-Ausführbare (und nicht um eine DLL) handelt.
+			\end{enumerate}
+		\end{enumerate}
+		Unterschiede in den Versionen finden sich in der Anzahl der Sektionen, dem Zeitstempel, der größe des Codes, der Relativ Virtuellen Adresse (RVA) sowie der größe verschiedener Verzeichnisse (Import Directory, Resource Directory, Exception Directory, Base Relocation Directory, Debug Directory, Load Configuration Directory, Import Address Table Directory)  wieder. Ebenfalls unterscheidet sich die Anzahl der Verzeichnisse.\\
 	\end{enumerate}
+	
+	\pagebreak
+	
+	\noindent \textbf{DEPENDENCIES}\\
+	Durch den Aufruf von \texttt{dumpbin /DEPENDECIES <PE-filename>} können mehrere Informationen über die Umgebung herausgefunden werden:\\
+	\begin{figure}[htp]
+		\centering
+		\begin{subfigure}[b]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{pictures/1. dependencies-mt.png}
+			\caption{dependencies mt-file}
+			\label{fig:image1}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{pictures/1. dependencies-mtd.png}
+			\caption{dependencies mtd-file}
+			\label{fig:image2}
+		\end{subfigure}
+		
+		\vspace{10pt} % Adjust to your liking
+		
+		\begin{subfigure}[b]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{pictures/1. dependencies-md.png}
+			\caption{dependencies md-file}
+			\label{fig:image3}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.45\textwidth}
+			\includegraphics[width=\textwidth]{pictures/1. dependencies-mdd.png}
+			\caption{dependencies mdd-file}
+			\label{fig:image4}
+		\end{subfigure}
+		\caption{All dependencies}
+		\label{fig:grid}
+	\end{figure}
+	
+	Die Unterschiedlichen Abhängigkeiten geben ebenfalls Auskunft über die Umgebung.\\
+	
+	\noindent \textbf{Weitere Informationen zur Umgebung}\\
+	Es können natürlich noch weitere Informationen über die Umgebung gefunden werden, hilfreich können auch die Parameter \texttt{/DEBUG}, \texttt{/IMPORTS} oder \texttt{/RESSOURCES} sein, es kommt jedoch immer darauf an, wonach gesucht wird.\\
+	
 	
 	\pagebreak
 	
@@ -340,7 +466,21 @@ skipbelow=\baselineskip, % Space below the frame
 	\includegraphics[width=0.7\linewidth]{pictures/2. compile files}\\
 	\\
 	\includegraphics[width=0.5\linewidth]{pictures/2. all files}\\
-		
+	
+	\subsection*{Fragen}
+	\begin{enumerate}
+		\item \textbf{Welche Imports werden verwendet?}
+		Um importierte Bibliotheken und Funktionen zu überprüfen kann \texttt{readelf -d <elf-filename>} oder \texttt{obhfdump -T <elf-filename>} verwendet werden.
+		\begin{enumerate}
+			\item infected.out.out
+			\item infected-ggdb.out
+			\item infected-static.out
+			\item infected-static-ggdb.out
+		\end{enumerate}
+	\end{enumerate}
+	
+	\pagebreak
+	
 	\begin{thebibliography}{9}
 		
 		\bibitem{radare2}
