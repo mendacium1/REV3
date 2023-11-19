@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.17)  15 NOV 2023 20:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.17)  19 NOV 2023 22:26
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **./s2210239021_protocol.tex
 (s2210239021_protocol.tex
@@ -726,55 +726,27 @@ Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count314
 )
 \bibdata{references}
-(s2210239021_protocol.bbl) (s2210239021_protocol.aux
-
-LaTeX Warning: Label `fig:image1' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:image1' multiply defined.
-
-
-LaTeX Warning: Label `fig:image2' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:image2' multiply defined.
-
-
-LaTeX Warning: Label `fig:image3' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:image3' multiply defined.
-
-
-LaTeX Warning: Label `fig:image4' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:image4' multiply defined.
-
-
-LaTeX Warning: Label `fig:grid' multiply defined.
-
-)
+(s2210239021_protocol.bbl) (s2210239021_protocol.aux)
 \openout1 = `s2210239021_protocol.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -836,7 +808,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 68.
+Package hyperref Info: Link coloring OFF on input line 69.
  (s2210239021_protocol.out) (s2210239021_protocol.out)
 \@outlinefile=\write4
 \openout4 = `s2210239021_protocol.out'.
@@ -845,23 +817,23 @@ Package hyperref Info: Link coloring OFF on input line 68.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 73.
+(Font)              <12> on input line 74.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 73.
+(Font)              <8> on input line 74.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 73.
-<fhooe_logo.jpg, id=6, 154.176pt x 93.4692pt>
+(Font)              <6> on input line 74.
+<fhooe_logo.jpg, id=10, 154.176pt x 93.4692pt>
 File: fhooe_logo.jpg Graphic file (type jpg)
 <use fhooe_logo.jpg>
-Package pdftex.def Info: fhooe_logo.jpg  used on input line 77.
+Package pdftex.def Info: fhooe_logo.jpg  used on input line 78.
 (pdftex.def)             Requested size: 154.1756pt x 93.46896pt.
-<si_logo.jpg, id=7, 207.6558pt x 43.6029pt>
+<si_logo.jpg, id=11, 207.6558pt x 43.6029pt>
 File: si_logo.jpg Graphic file (type jpg)
 <use si_logo.jpg>
-Package pdftex.def Info: si_logo.jpg  used on input line 82.
+Package pdftex.def Info: si_logo.jpg  used on input line 83.
 (pdftex.def)             Requested size: 207.65529pt x 43.60278pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
@@ -869,455 +841,141 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
 {C:/Users/jakim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./fhooe_logo
 .jpg> <./si_logo.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
-
- []
-
 (C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 (C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
-
- []
-
-<pictures/1. setting runtime library.png, id=59, 711.15688pt x 468.24937pt>
-File: pictures/1. setting runtime library.png Graphic file (type png)
-<use pictures/1. setting runtime library.png>
-Package pdftex.def Info: pictures/1. setting runtime library.png  used on input
- line 174.
-(pdftex.def)             Requested size: 315.68132pt x 207.85945pt.
-<pictures/1. all files.png, id=61, 378.41376pt x 194.22563pt>
-File: pictures/1. all files.png Graphic file (type png)
-<use pictures/1. all files.png>
-Package pdftex.def Info: pictures/1. all files.png  used on input line 176.
-(pdftex.def)             Requested size: 225.48764pt x 115.73608pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--177
-
- []
-
-[3 <./pictures/1. setting runtime library.png> <./pictures/1. all files.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
-
- []
-
-<pictures/1. dumpbin mt.png, id=81, 480.79625pt x 243.91125pt>
-File: pictures/1. dumpbin mt.png Graphic file (type png)
-<use pictures/1. dumpbin mt.png>
-Package pdftex.def Info: pictures/1. dumpbin mt.png  used on input line 188.
-(pdftex.def)             Requested size: 202.9375pt x 102.9519pt.
-<pictures/1. dumpbin mtd.png, id=82, 483.8075pt x 236.885pt>
-File: pictures/1. dumpbin mtd.png Graphic file (type png)
-<use pictures/1. dumpbin mtd.png>
-Package pdftex.def Info: pictures/1. dumpbin mtd.png  used on input line 194.
-(pdftex.def)             Requested size: 202.9375pt x 99.3645pt.
-<pictures/1. dumpbin md.png, id=83, 482.30188pt x 232.36812pt>
-File: pictures/1. dumpbin md.png Graphic file (type png)
-<use pictures/1. dumpbin md.png>
-Package pdftex.def Info: pictures/1. dumpbin md.png  used on input line 202.
-(pdftex.def)             Requested size: 202.9375pt x 97.77121pt.
-<pictures/1. dumpbin mdd.png, id=84, 483.30562pt x 226.34563pt>
-File: pictures/1. dumpbin mdd.png Graphic file (type png)
-<use pictures/1. dumpbin mdd.png>
-Package pdftex.def Info: pictures/1. dumpbin mdd.png  used on input line 208.
-(pdftex.def)             Requested size: 202.9375pt x 95.04033pt.
-
-Overfull \hbox (2.33109pt too wide) in paragraph at lines 216--219
-\OT1/cmr/m/n/10 Die dy-namisch ver-link-ten Ver-sio-nen (infected-md.exe und in
-fected-MDd.exe) sind im All-ge-meinen kleiner,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--219
-
- []
-
-[4 <./pictures/1. dumpbin mt.png> <./pictures/1. dumpbin mtd.png> <./pictures/1
-. dumpbin md.png> <./pictures/1. dumpbin mdd.png>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
-23.
-
-(C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
-File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+[2]
+(C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 223.
-<pictures/1. strings from all files.png, id=98, 1879.02pt x 1127.21124pt>
-File: pictures/1. strings from all files.png Graphic file (type png)
-<use pictures/1. strings from all files.png>
-Package pdftex.def Info: pictures/1. strings from all files.png  used on input 
-line 225.
-(pdftex.def)             Requested size: 450.97528pt x 270.53622pt.
-<pictures/1. strings from all files.2.png, id=99, 1877.0125pt x 1140.26pt>
-File: pictures/1. strings from all files.2.png Graphic file (type png)
-<use pictures/1. strings from all files.2.png>
-Package pdftex.def Info: pictures/1. strings from all files.2.png  used on inpu
-t line 227.
-(pdftex.def)             Requested size: 450.97528pt x 273.94637pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--228
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--228
-
- []
-
-[5 <./pictures/1. strings from all files.png (PNG copy)> <./pictures/1. strings
- from all files.2.png (PNG copy)>]
-<pictures/1. example imports.png, id=107, 753.81625pt x 476.78125pt>
-File: pictures/1. example imports.png Graphic file (type png)
-<use pictures/1. example imports.png>
-Package pdftex.def Info: pictures/1. example imports.png  used on input line 23
-3.
-(pdftex.def)             Requested size: 425.97525pt x 269.42555pt.
- [6 <./pictures/1. example imports.png (PNG copy)>]
-File: pictures/1. dumpbin md.png Graphic file (type png)
-<use pictures/1. dumpbin md.png>
-Package pdftex.def Info: pictures/1. dumpbin md.png  used on input line 263.
-(pdftex.def)             Requested size: 425.97525pt x 205.23624pt.
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 307--309
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--322
-
- []
-
-<pictures/1. umgebung.png, id=168, 979.66pt x 409.53pt>
-File: pictures/1. umgebung.png Graphic file (type png)
-<use pictures/1. umgebung.png>
-Package pdftex.def Info: pictures/1. umgebung.png  used on input line 327.
-(pdftex.def)             Requested size: 425.97525pt x 178.06912pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 323--330
-
- []
-
-[8 <./pictures/1. umgebung.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 341--343
-
- []
-
-[9] [10]
-<pictures/1. dependencies-mt.png, id=256, 994.71625pt x 445.665pt>
-File: pictures/1. dependencies-mt.png Graphic file (type png)
-<use pictures/1. dependencies-mt.png>
-Package pdftex.def Info: pictures/1. dependencies-mt.png  used on input line 41
-6.
-(pdftex.def)             Requested size: 202.9375pt x 90.91989pt.
-<pictures/1. dependencies-mtd.png, id=257, 1001.7425pt x 446.66875pt>
-File: pictures/1. dependencies-mtd.png Graphic file (type png)
-<use pictures/1. dependencies-mtd.png>
-Package pdftex.def Info: pictures/1. dependencies-mtd.png  used on input line 4
-22.
-(pdftex.def)             Requested size: 202.9375pt x 90.484pt.
-<pictures/1. dependencies-md.png, id=258, 995.72pt x 540.0175pt>
-File: pictures/1. dependencies-md.png Graphic file (type png)
-<use pictures/1. dependencies-md.png>
-Package pdftex.def Info: pictures/1. dependencies-md.png  used on input line 43
-0.
-(pdftex.def)             Requested size: 202.9375pt x 110.06158pt.
-<pictures/1. dependencies-mdd.png, id=259, 1009.7725pt x 463.7325pt>
-File: pictures/1. dependencies-mdd.png Graphic file (type png)
-<use pictures/1. dependencies-mdd.png>
-Package pdftex.def Info: pictures/1. dependencies-mdd.png  used on input line 4
-36.
-(pdftex.def)             Requested size: 202.9375pt x 93.19771pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--448
-
- []
-
-[11 <./pictures/1. dependencies-mt.png (PNG copy)> <./pictures/1. dependencies-
-mtd.png (PNG copy)> <./pictures/1. dependencies-md.png (PNG copy)> <./pictures/
-1. dependencies-mdd.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
-
- []
-
-<pictures/2. compile files.png, id=266, 919.435pt x 239.89626pt>
-File: pictures/2. compile files.png Graphic file (type png)
-<use pictures/2. compile files.png>
-Package pdftex.def Info: pictures/2. compile files.png  used on input line 464.
-
-(pdftex.def)             Requested size: 315.68132pt x 82.36896pt.
-<pictures/2. all files.png, id=267, 919.435pt x 237.88875pt>
-File: pictures/2. all files.png Graphic file (type png)
-<use pictures/2. all files.png>
-Package pdftex.def Info: pictures/2. all files.png  used on input line 466.
-(pdftex.def)             Requested size: 225.48764pt x 58.33951pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 463--467
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 463--467
-
- []
-
-<pictures/2. objdump-example.png, id=268, 577.40718pt x 106.14656pt>
-File: pictures/2. objdump-example.png Graphic file (type png)
-<use pictures/2. objdump-example.png>
-Package pdftex.def Info: pictures/2. objdump-example.png  used on input line 47
-3.
-(pdftex.def)             Requested size: 298.18137pt x 54.81752pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 470--474
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 475--476
-
- []
-
-[12 <./pictures/2. compile files.png (PNG copy)> <./pictures/2. all files.png (
-PNG copy)> <./pictures/2. objdump-example.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 492--493
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 502--503
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 511--512
-
- []
-
-
-Overfull \hbox (27.02303pt too wide) in paragraph at lines 519--520
-\OT1/cmr/m/n/10 Die Ergeb-nisse in \OT1/cmtt/m/n/10 infected-static-ggdb.out \O
-T1/cmr/m/n/10 sind gle-ich zu erkl^^?aren wie in \OT1/cmtt/m/n/10 infected-stat
-ic.out\OT1/cmr/m/n/10 . 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 519--520
-
- []
-
-[13]
-<pictures/2. sections-example.png, id=330, 582.67688pt x 359.09157pt>
-File: pictures/2. sections-example.png Graphic file (type png)
-<use pictures/2. sections-example.png>
-Package pdftex.def Info: pictures/2. sections-example.png  used on input line 5
-26.
-(pdftex.def)             Requested size: 298.18137pt x 183.76439pt.
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-528.
- (C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmtt.fd
-File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+(C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang2.sty
+File: lstlang2.sty 2023/02/27 1.9 listings language file
 )
-LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
-528.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 528.
+(C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang3.sty
+File: lstlang3.sty 2023/02/27 1.9 listings language file
+)
+<pictures/c - rev - isdebugged.png, id=87, 725.71124pt x 317.68687pt>
+File: pictures/c - rev - isdebugged.png Graphic file (type png)
+<use pictures/c - rev - isdebugged.png>
+Package pdftex.def Info: pictures/c - rev - isdebugged.png  used on input line 
+230.
+(pdftex.def)             Requested size: 315.68132pt x 138.19266pt.
+<pictures/c - rev - unhandled exception.png, id=89, 863.47594pt x 560.0925pt>
+File: pictures/c - rev - unhandled exception.png Graphic file (type png)
+<use pictures/c - rev - unhandled exception.png>
+Package pdftex.def Info: pictures/c - rev - unhandled exception.png  used on in
+put line 232.
+(pdftex.def)             Requested size: 315.68132pt x 204.7611pt.
+<pictures/c - rev - unhandled exception - stack.png, id=90, 519.9425pt x 291.08
+75pt>
+File: pictures/c - rev - unhandled exception - stack.png Graphic file (type png
+)
+<use pictures/c - rev - unhandled exception - stack.png>
+Package pdftex.def Info: pictures/c - rev - unhandled exception - stack.png  us
+ed on input line 234.
+(pdftex.def)             Requested size: 315.68132pt x 176.73251pt.
 
-
-LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 528.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 524--529
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 555--556
-
- []
-
-[14 <./pictures/2. sections-example.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 586--587
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 609--610
+Underfull \hbox (badness 10000) in paragraph at lines 228--236
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 639--642
+[3] [4 <./pictures/c - rev - isdebugged.png> <./pictures/c - rev - unhandled ex
+ception.png>] [5 <./pictures/c - rev - unhandled exception - stack.png (PNG cop
+y)>]
+<pictures/asm - rev - isdebugged.png, id=171, 1052.93375pt x 375.4025pt>
+File: pictures/asm - rev - isdebugged.png Graphic file (type png)
+<use pictures/asm - rev - isdebugged.png>
+Package pdftex.def Info: pictures/asm - rev - isdebugged.png  used on input lin
+e 241.
+(pdftex.def)             Requested size: 315.68132pt x 112.54715pt.
+<pictures/asm - rev - unhandled exception - breakpoint bei setunhandled excepti
+on.png, id=172, 566.115pt x 185.69376pt>
+File: pictures/asm - rev - unhandled exception - breakpoint bei setunhandled ex
+ception.png Graphic file (type png)
+<use pictures/asm - rev - unhandled exception - breakpoint bei setunhandled exc
+eption.png>
+Package pdftex.def Info: pictures/asm - rev - unhandled exception - breakpoint 
+bei setunhandled exception.png  used on input line 243.
+(pdftex.def)             Requested size: 315.68132pt x 103.55144pt.
+<pictures/asm - rev - unhandled exception - stack.png, id=173, 484.81125pt x 72
+.27pt>
+File: pictures/asm - rev - unhandled exception - stack.png Graphic file (type p
+ng)
+<use pictures/asm - rev - unhandled exception - stack.png>
+Package pdftex.def Info: pictures/asm - rev - unhandled exception - stack.png  
+used on input line 244.
+(pdftex.def)             Requested size: 315.68132pt x 47.05983pt.
+<pictures/asm - rev - stack2.png, id=174, 392.46625pt x 242.9075pt>
+File: pictures/asm - rev - stack2.png Graphic file (type png)
+<use pictures/asm - rev - stack2.png>
+Package pdftex.def Info: pictures/asm - rev - stack2.png  used on input line 24
+5.
+(pdftex.def)             Requested size: 315.68132pt x 195.3937pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--246
 
  []
 
-<pictures/2. umgebung-example.png, id=447, 704.6325pt x 326.72063pt>
-File: pictures/2. umgebung-example.png Graphic file (type png)
-<use pictures/2. umgebung-example.png>
-Package pdftex.def Info: pictures/2. umgebung-example.png  used on input line 6
-44.
-(pdftex.def)             Requested size: 298.18137pt x 138.25867pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 642--645
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 646--648
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 651--652
-
- []
-
-[16 <./pictures/2. umgebung-example.png>] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 677--679
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 682--683
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 705--707
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 710--711
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 733--735
-
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 738--739
-
- []
-
-[19]
-<pictures/3. strings.png, id=581, 542.77782pt x 27.85406pt>
-File: pictures/3. strings.png Graphic file (type png)
-<use pictures/3. strings.png>
-Package pdftex.def Info: pictures/3. strings.png  used on input line 769.
-(pdftex.def)             Requested size: 315.68132pt x 16.2004pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 767--771
-
- []
-
-<pictures/3. debug-directories.png, id=582, 970.3753pt x 216.81pt>
-File: pictures/3. debug-directories.png Graphic file (type png)
-<use pictures/3. debug-directories.png>
-Package pdftex.def Info: pictures/3. debug-directories.png  used on input line 
-776.
-(pdftex.def)             Requested size: 298.18137pt x 66.62152pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 774--778
-
- []
-
-<pictures/3. timestamp.png, id=583, 384.6872pt x 256.70906pt>
-File: pictures/3. timestamp.png Graphic file (type png)
-<use pictures/3. timestamp.png>
-Package pdftex.def Info: pictures/3. timestamp.png  used on input line 783.
-(pdftex.def)             Requested size: 298.18137pt x 198.99446pt.
-[20 <./pictures/3. strings.png> <./pictures/3. debug-directories.png> <./pictur
-es/3. timestamp.png>]
+[6 <./pictures/asm - rev - isdebugged.png (PNG copy)> <./pictures/asm - rev - u
+nhandled exception - breakpoint bei setunhandled exception.png (PNG copy)> <./p
+ictures/asm - rev - unhandled exception - stack.png (PNG copy)> <./pictures/asm
+ - rev - stack2.png (PNG copy)>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 792.
+(Font)              <7> on input line 251.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 792.
-<pictures/3. interesting strings.png, id=599, 568.37344pt x 91.84312pt>
-File: pictures/3. interesting strings.png Graphic file (type png)
-<use pictures/3. interesting strings.png>
-Package pdftex.def Info: pictures/3. interesting strings.png  used on input lin
-e 795.
-(pdftex.def)             Requested size: 298.18137pt x 48.18471pt.
+(Font)              <5> on input line 251.
+<pictures/phantom.png, id=182, 452.69125pt x 193.72375pt>
+File: pictures/phantom.png Graphic file (type png)
+<use pictures/phantom.png>
+Package pdftex.def Info: pictures/phantom.png  used on input line 253.
+(pdftex.def)             Requested size: 315.68132pt x 135.09135pt.
+<pictures/c - rev- plugin.png, id=183, 214.8025pt x 363.3575pt>
+File: pictures/c - rev- plugin.png Graphic file (type png)
+<use pictures/c - rev- plugin.png>
+Package pdftex.def Info: pictures/c - rev- plugin.png  used on input line 255.
+(pdftex.def)             Requested size: 90.19368pt x 152.57028pt.
 
-Overfull \hbox (48.02063pt too wide) in paragraph at lines 788--796
-[]$\OT1/cmtt/m/n/10 https : / / www . fh-[]ooe . at / campus-[]hagenberg / stud
-iengaenge / bachelor / sichere-[]informationssysteme/$[] 
+Overfull \hbox (36.52051pt too wide) in paragraph at lines 250--256
+[]$\OT1/cmtt/m/n/10 https : / / github . com / romanzaikin / OllyDbg-[]v1 . 10-
+[]With-[]Best-[]Plugins-[]And-[]Immunity-[]Debugger-[]theme-[] /
  []
 
-[21 <./pictures/3. interesting strings.png>] (s2210239021_protocol.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--256
+
+ []
+
+[7 <./pictures/phantom.png (PNG copy)> <./pictures/c - rev- plugin.png (PNG cop
+y)>] (s2210239021_protocol.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `s2210239021_protocol.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 91B4541685DE9F4F9C2843FAEDE326E9;144.
  ) 
 Here is how much of TeX's memory you used:
- 24711 strings out of 475248
- 459295 string characters out of 5757812
- 2602785 words of memory out of 5000000
- 45415 multiletter control sequences out of 15000+600000
- 563563 words of font info for 55 fonts, out of 8000000 for 9000
+ 24317 strings out of 475248
+ 451213 string characters out of 5757812
+ 2305785 words of memory out of 5000000
+ 45352 multiletter control sequences out of 15000+600000
+ 562659 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,12n,107p,575b,2172s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\jakim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt
-1000.pk><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jakim/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jakim/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/jakim/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jakim
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
-ers/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.p
-fb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmtt8.pfb>
-Output written on s2210239021_protocol.pdf (21 pages, 1925778 bytes).
+ 102i,11n,107p,516b,1615s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr10.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/jakim/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/jakim/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on s2210239021_protocol.pdf (7 pages, 375822 bytes).
 PDF statistics:
- 748 PDF objects out of 1000 (max. 8388607)
- 461 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 250 PDF objects out of 1000 (max. 8388607)
+ 131 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
