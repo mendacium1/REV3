@@ -16,6 +16,7 @@
 \usepackage{listings} % Include the listings package
 \usepackage{xcolor}   % to define your own colors
 \usepackage{subcaption}
+\usepackage{array}
 
 \bibliographystyle{unsrt}
 \bibliography{references}
@@ -96,18 +97,198 @@ skipbelow=\baselineskip, % Space below the frame
 	\fancyfoot[L]{Seite \thepage\ von \pageref{LastPage}}
 	\fancyfoot[R]{\AUTHOR}
 	
-	\section*{Einleitung}
-	...\\
 	
 	\pagebreak
 	
-	\section*{Implementierung}
-	\subsection*{C}
+	\section*{Aufgabe 1 - Dynamische Analyse Windows}
+	\begin{mynote}
+		Die Analyse wurde in einer Windows 11 VM unter qemu durchgeführt.
+	\end{mynote}
+	\subsection*{Process Tree}
+	Prozessbäume geben immer einen guten ersten Überblick, was alles passiert (ist):\\
+	\includegraphics[width=0.7\linewidth]{"pictures/1.4 process tree"}
+	\subsection*{Filtern auf Prozess und Kind-Prozesse}
+	Anschließend kann auf einen Prozess und dessen Kind-Prozesse gefiltert werden:\\
+	\includegraphics[width=0.5\linewidth]{"pictures/1.5 process tree2"}\\
+	Folglich der Filter:\\
+	\includegraphics[width=0.5\linewidth]{"pictures/1.6 process tree3"}
+	
+	\pagebreak
+	
+	\subsection*{Filtern auf Event-Klassen}
+	In ProcMon kann auf Event-Klassen gefilter werden:\\
+	\includegraphics[width=0.4\linewidth]{"pictures/1.7 event class"}\\
+	
+	\pagebreak
+	
+	\noindent Folgende Event-Klassen mit den jeweiligen Event-Typen konnten auf dem System (allgemein) gefunden werden:\\
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|m{3.3cm}|m{2.2cm}|m{2.6cm}|m{2.4cm}|m{2.4cm}|}
+			\hline
+			\textbf{File System} & \textbf{Registry} & \textbf{Network} & \textbf{Process} & \textbf{Thread} \\ \hline
+			CreateFile           & QueryValue        & TCP Connect      & Process Create   & Thread Create   \\ \hline
+			CloseFile            & SetValue          & UDP Receive      & Process Exit     & Thread Exit     \\ \hline
+			ReadFile             & CreateKey         & TCP Disconnect   & Load Image       &                 \\ \hline
+			WriteFile            & EnumValue         & UDP Send         & Unload Image     &                 \\ \hline
+			DeleteFile           & QueryKey          &                  &                  &                 \\ \hline
+			QueryInformationFile &                   &                  &                  &                 \\ \hline
+			SetInformationFile   &                   &                  &                  &                 \\ \hline
+			RenameFile           &                   &                  &                  &                 \\ \hline
+			QueryDirectory       &                   &                  &                  &                 \\ \hline
+			QueryEAFile          &                   &                  &                  &                 \\ \hline
+			SetEAFile            &                   &                  &                  &                 \\ \hline
+			QuerySecurityFile    &                   &                  &                  &                 \\ \hline
+			SetSecurityFile      &                   &                  &                  &                 \\ \hline
+			CreateFileMapping    &                   &                  &                  &                 \\ \hline
+		\end{tabular}
+		\caption{ProcMon Event Classes and Types}
+		\label{table:procmon-events}
+	\end{table}
+
+	Filter für Event-Klasse "File System":\\
+	\includegraphics[width=0.7\linewidth]{"pictures/1.7 event class file"}\\
+	Filter für Event-Klasse "Registry":\\
+	\includegraphics[width=0.7\linewidth]{"pictures/1.7 event class registry"}\\
+	Filter für Event-Klasse "Network":\\
+	\includegraphics[width=0.7\linewidth]{"pictures/1.7 event class network"}\\
+	
+	
 
 	
-	\section*{Umgehung - Manuell}
-	\subsection*{C}
+	\pagebreak
 	
+	\subsection*{Interpretation der Egebnisse der erzeugten Windows-Executables}
+	\textbf{Dateizugriffe}:\\
+	\begin{enumerate}
+		\item dll's:\\
+		Auffällig ist, dass die mit "md" und "mdd" kompilierten Files mehr Datei-Operationen durchgeführt haben. Die Operationen betreffen bei beiden die "vcruntime140.dll" und die "ucrtbased.dll" bei "mdd".
+		\item Prefetch:\\
+		Alle Varianten bis auf "mtd" beinhalten Datei-Operationen mit dem Pfad "C:\textbackslash Windows\textbackslash Prefetch\textbackslash ...". Dieser Pfad beschleunigt unter Windows 11 das ausführen von Dateien durch vorgeladenene Inhalte, welche in diesem Verzeichnis liegen.
+		\item Conhost.exe:\\
+		Die Dateizugriffe vom Kind-Prozess "Conhost.exe" sind bei allen Executables gleich.
+	\end{enumerate}
+	Allgemein anzumerken ist, dass unter Windows 7 mehr Events zu sehen sind, da das Laden von dlls anders funktioniert. Die \textbf{api-ms-win-*.dll}s tauchen unter Windows 11 nicht auf. Die genauen Gründe für die Unterschiede zwischen Win7 und Win10 konnten nicht recherchiert werden.\\
+	Windows 7 Beispiel-Screenshot (md-Variante):\\
+	\includegraphics[width=0.7\linewidth]{"pictures/1.7 event class file2"}\\
+	
+	\pagebreak
+	
+	\noindent Windows 11 Beispiel-Screenshot (md-Variante):\\
+	\includegraphics[width=0.7\linewidth]{"pictures/1.7 event class file3"}\\
+	
+	\noindent\textbf{Registryzugriffe}\\
+	\begin{enumerate}
+		\item Operationstypen:\\
+		Die einzigen Operationen in allen 4 Varianten sind "RegOpenKey", "RegQueryValue" und "RegCloseKey".
+		\item Pfade:\\
+		Die Pfade sind großteils in allen 4 Varianten gleich. Die einzigen Unterschiede sind die Anzahl der Events und der Pfad "\texttt{HKLM\textbackslash System\textbackslash CurrentControlSet\textbackslash Control\textbackslash Session Manager\textbackslash SafeDllSearchMode}" welcher in den "mt"- und "mtd"-Varianten nicht vorkommt.\\
+		\includegraphics[width=0.9\linewidth]{"pictures/1.7 event class registry2"}
+		\item Conhost.exe:\\
+		Die Registryzugriffe vom Kind-Prozess "Conhost.exe" sind bei allen Executables gleich.
+	\end{enumerate}
+	\noindent\textbf{Netzwerkkommunikation}\\
+	Filtert man in \textbf{Process Monitor} auf die Event-Klasse "Network" so findet man in allen 4 Varianten keine Ergebnisse. Die Exectuables erstellen keine Sockets und somit gibt es auch keine Netzwerkkommunikation.
+	
+	\begin{mynote}
+		Die .pml-Dateien (Process Monitor) der 4 Varianten sind im zip-Archiv unterschiedlich gefiltert hinterlegt.
+	\end{mynote}
+	\pagebreak
+	
+	\section*{Aufgabe 2 - Dynamische Analyse Windows (File: "a")}
+	\begin{mynote}
+		Die Datei wurde in der zur Verfügung gestellten "Malware VM" analysiert.
+	\end{mynote}
+	Zu Beginn ist es wieder hilfreich über den Prozessbaum auf den eigentlich zu analysierenden Prozess wie auch dessen Kind-Prozesse zu filtern:\\
+	\includegraphics[width=1\linewidth]{"pictures/2.1 main"}
+	Anschließend kann es interessant sein, sich eine Summary der Prozessaktivitäten anzeigen zu lassen:\\
+	\includegraphics[width=1\linewidth]{"pictures/2.1 main2"}
+	Dies verschafft bereits einen groben Überblick.
+	
+	\pagebreak
+	
+	\noindent Bei der Betrachtung der Prozesserstellungen ist beispielsweise auffällig, wie die "firefox.exe" aufgerufen wird:\\
+	\includegraphics[width=1\linewidth]{"pictures/2.1 process creation"}\\
+	Zugehörige CommandLine:\\
+	\includegraphics[width=1\linewidth]{"pictures/2.1 firefox start"}\\
+	
+	\pagebreak
+	
+	\noindent\textbf{Dateizugriffe}\\
+	Da nach dem Filtern auf "\texttt{Process Name is a}" und "\texttt{Event Class is File System}" immernoch weit über 1000 Events bleiben, kann das Tool "File Summary" im "Process Monitor" hilfreich sein:\\
+	\includegraphics[width=1\linewidth]{"pictures/2.2 File Summary"}
+	Neben den "normal" interessanten Informationen, wie importierte Funktionen/geladenen Libraries, findet man über die File Summary sehr schnell, dass die firefox.exe verwendet wird und dass mit einem File "sib.html" gearbeitet wird. Anzumerken ist, dass hier nur das File "a" gezeigt wird (mit Kind-Prozessen mehr Information).\\
+	
+	\pagebreak
+	
+	\noindent \textbf{Registryzugriffe}\\
+	Da das "a"-File ebenfalls sehr viele Registryzugriffe hat, ist es am sinnvollsten die "Registry Summary" zu verwenden.\\
+	\includegraphics[width=1\linewidth]{"pictures/2.3 Registry Summary"}\\
+	Besondere Auffälligkeiten konnte hier nicht gefunden werden.\\
+	
+	\pagebreak
+	
+	\noindent \textbf{Netzwerkkommunikation}\\
+	Da die Analyse der Netzwerkkommunikation eines Prozesses unter Windows 7 mit dem "Process Monitor" nicht so gut funktioniert wie unter Windows 11, wurde eine zustätzliche Software dafür verwendet:\\
+	\url{https://www.microsoft.com/en-us/download/details.aspx?id=4865}\\
+	\includegraphics[width=1\linewidth]{"pictures/2.4 Network Monitor"}\\
+	Die damit empfangenen Pakete können als \texttt{.cap} exportiert werden.\\
+
+	\pagebreak
+	
+	\noindent Folgende Tabelle zeigt oberflächlich die Netzwerk-kommunikation der "a"-Datei (siehe network.csv für mehr Details):\\
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|m{1cm}|m{1.5cm}|m{3cm}|m{3cm}|m{1.4cm}|}
+			\hline
+			\textbf{Fame Number} & \textbf{Process Name} &          \textbf{Source} &    \textbf{Destination} & \textbf{Protocol Name} \\ \hline
+			15 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
+			16 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			17 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
+			18 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TLS \\ \hline
+			19 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			20 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TLS \\ \hline
+			21 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			22 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			23 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
+			24 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TLS \\ \hline
+			25 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			26 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			27 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
+			28 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TLS \\ \hline
+			29 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			30 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TLS \\ \hline
+			31 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
+			32 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TLS \\ \hline
+			33 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			34 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TLS \\ \hline
+			35 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TLS \\ \hline
+			36 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			37 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TLS \\ \hline
+			38 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			39 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
+			40 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TLS \\ \hline
+			41 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
+			42 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TLS \\ \hline
+			43 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			44 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			45 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
+			46 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TLS \\ \hline
+			47 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			48 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
+			124 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TLS \\ \hline
+			125 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
+			126 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
+			127 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
+			131 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
+		\end{tabular}
+		\caption{a-File Netzwerkkommunikation}
+		\label{table:a-network}
+	\end{table}
+	
+	\begin{mynote}
+		Eine .cap-Datei (Netzwerk-capture-Datei) und die unterschiedlichen .pml-Dateien (Process Monitor) sind wiederum im .zip-Archiv angehängt.
+	\end{mynote}
 	
 	
 	\label{LastPage}

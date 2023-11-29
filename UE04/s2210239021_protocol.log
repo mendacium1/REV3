@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.17)  27 NOV 2023 17:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.17)  29 NOV 2023 21:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -724,29 +724,38 @@ Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count313
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count314
+) (C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen273
+\ar@mcellbox=\box70
+\extrarowheight=\dimen274
+\NC@list=\toks32
+\extratabsurround=\skip127
+\backup@length=\skip128
+\ar@cellbox=\box71
 )
 \bibdata{references}
 (s2210239021_protocol.bbl) (s2210239021_protocol.aux)
 \openout1 = `s2210239021_protocol.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -787,16 +796,16 @@ LaTeX Font Info:    ... okay on input line 69.
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count315
-\scratchdimen=\dimen273
-\scratchbox=\box70
+\scratchdimen=\dimen275
+\scratchbox=\box72
 \nofMPsegments=\count316
 \nofMParguments=\count317
-\everyMPshowfont=\toks32
+\everyMPshowfont=\toks33
 \MPscratchCnt=\count318
-\MPscratchDim=\dimen274
+\MPscratchDim=\dimen276
 \MPnumerator=\count319
 \makeMPintoPDFobject=\count320
-\everyMPtoPDFconversion=\toks33
+\everyMPtoPDFconversion=\toks34
 )
 (C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -808,7 +817,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 69.
+Package hyperref Info: Link coloring OFF on input line 70.
  (s2210239021_protocol.out) (s2210239021_protocol.out)
 \@outlinefile=\write4
 \openout4 = `s2210239021_protocol.out'.
@@ -817,53 +826,279 @@ Package hyperref Info: Link coloring OFF on input line 69.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 74.
+(Font)              <12> on input line 75.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 74.
+(Font)              <8> on input line 75.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 74.
+(Font)              <6> on input line 75.
 <fhooe_logo.jpg, id=6, 154.176pt x 93.4692pt>
 File: fhooe_logo.jpg Graphic file (type jpg)
 <use fhooe_logo.jpg>
-Package pdftex.def Info: fhooe_logo.jpg  used on input line 78.
+Package pdftex.def Info: fhooe_logo.jpg  used on input line 79.
 (pdftex.def)             Requested size: 154.1756pt x 93.46896pt.
 <si_logo.jpg, id=7, 207.6558pt x 43.6029pt>
 File: si_logo.jpg Graphic file (type jpg)
 <use si_logo.jpg>
-Package pdftex.def Info: si_logo.jpg  used on input line 83.
+Package pdftex.def Info: si_logo.jpg  used on input line 84.
 (pdftex.def)             Requested size: 207.65529pt x 43.60278pt.
+ [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+{C:/Users/jakim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./fhooe_logo
+.jpg> <./si_logo.jpg>]
+<pictures/1.4 process tree.png, id=17, 1312.905pt x 611.28375pt>
+File: pictures/1.4 process tree.png Graphic file (type png)
+<use pictures/1.4 process tree.png>
+Package pdftex.def Info: pictures/1.4 process tree.png  used on input line 109.
+
+(pdftex.def)             Requested size: 315.68132pt x 146.98158pt.
+<pictures/1.5 process tree2.png, id=19, 280.79906pt x 72.27pt>
+File: pictures/1.5 process tree2.png Graphic file (type png)
+<use pictures/1.5 process tree2.png>
+Package pdftex.def Info: pictures/1.5 process tree2.png  used on input line 112
+.
+(pdftex.def)             Requested size: 225.48764pt x 58.03441pt.
+<pictures/1.6 process tree3.png, id=20, 426.09187pt x 47.42719pt>
+File: pictures/1.6 process tree3.png Graphic file (type png)
+<use pictures/1.6 process tree3.png>
+Package pdftex.def Info: pictures/1.6 process tree3.png  used on input line 114
+.
+(pdftex.def)             Requested size: 225.48764pt x 25.09865pt.
+ [2 <./pictures/1.4 process tree.png> <./pictures/1.5 process tree2.png> <./pic
+tures/1.6 process tree3.png>]
+<pictures/1.7 event class.png, id=34, 268.00125pt x 409.53pt>
+File: pictures/1.7 event class.png Graphic file (type png)
+<use pictures/1.7 event class.png>
+Package pdftex.def Info: pictures/1.7 event class.png  used on input line 120.
+(pdftex.def)             Requested size: 180.38736pt x 275.64595pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
 
  []
 
-[1
+[3 <./pictures/1.7 event class.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 127.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 127.
 
-{C:/Users/jakim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./fhooe_logo
-.jpg> <./si_logo.jpg>] [2] (s2210239021_protocol.aux)
+Overfull \hbox (1.30052pt too wide) in paragraph at lines 135--135
+[]|\OT1/cmr/m/n/10 QueryInformationFile| 
+ []
+
+<pictures/1.7 event class file.png, id=42, 388.45125pt x 19.57312pt>
+File: pictures/1.7 event class file.png Graphic file (type png)
+<use pictures/1.7 event class file.png>
+Package pdftex.def Info: pictures/1.7 event class file.png  used on input line 
+150.
+(pdftex.def)             Requested size: 315.68132pt x 15.9067pt.
+<pictures/1.7 event class registry.png, id=43, 383.18156pt x 18.82031pt>
+File: pictures/1.7 event class registry.png Graphic file (type png)
+<use pictures/1.7 event class registry.png>
+Package pdftex.def Info: pictures/1.7 event class registry.png  used on input l
+ine 152.
+(pdftex.def)             Requested size: 315.68132pt x 15.50568pt.
+<pictures/1.7 event class network.png, id=44, 379.4175pt x 18.82031pt>
+File: pictures/1.7 event class network.png Graphic file (type png)
+<use pictures/1.7 event class network.png>
+Package pdftex.def Info: pictures/1.7 event class network.png  used on input li
+ne 154.
+(pdftex.def)             Requested size: 315.68132pt x 15.65903pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--155
+
+ []
+
+[4 <./pictures/1.7 event class file.png> <./pictures/1.7 event class registry.p
+ng> <./pictures/1.7 event class network.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+
+Overfull \hbox (2.38673pt too wide) in paragraph at lines 164--166
+\OT1/cmr/m/n/10 Auff^^?allig ist, dass die mit "md" und "mdd" kom-pilierten Fil
+es mehr Datei-Operationen durchgef^^?uhrt
+ []
+
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+67.
+(C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 167.
+
+Overfull \hbox (12.97008pt too wide) in paragraph at lines 166--168
+\OT1/cmr/m/n/10 Alle Vari-anten bis auf "mtd" bein-hal-ten Datei-Operationen mi
+t dem Pfad "C:\OMS/cmsy/m/n/10 n\OT1/cmr/m/n/10 Windows\OMS/cmsy/m/n/10 n\OT1/c
+mr/m/n/10 Prefetch\OMS/cmsy/m/n/10 n\OT1/cmr/m/n/10 ...".
+ []
+
+<pictures/1.7 event class file2.png, id=54, 749.80125pt x 858.20625pt>
+File: pictures/1.7 event class file2.png Graphic file (type png)
+<use pictures/1.7 event class file2.png>
+Package pdftex.def Info: pictures/1.7 event class file2.png  used on input line
+ 173.
+(pdftex.def)             Requested size: 315.68132pt x 361.32155pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--174
+
+ []
+
+[5 <./pictures/1.7 event class file2.png>]
+<pictures/1.7 event class file3.png, id=66, 1909.88531pt x 807.015pt>
+File: pictures/1.7 event class file3.png Graphic file (type png)
+<use pictures/1.7 event class file3.png>
+Package pdftex.def Info: pictures/1.7 event class file3.png  used on input line
+ 178.
+(pdftex.def)             Requested size: 315.68132pt x 133.3857pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+
+ []
+
+LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
+185.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 185.
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbackslash' on input line 185.
+
+<pictures/1.7 event class registry2.png, id=67, 794.97pt x 39.89906pt>
+File: pictures/1.7 event class registry2.png Graphic file (type png)
+<use pictures/1.7 event class registry2.png>
+Package pdftex.def Info: pictures/1.7 event class registry2.png  used on input 
+line 186.
+(pdftex.def)             Requested size: 383.37512pt x 19.24202pt.
+
+Overfull \hbox (44.77199pt too wide) in paragraph at lines 184--187
+\OT1/cmr/m/n/10 Events und der Pfad "\OT1/cmtt/m/n/10 HKLM\OMS/cmtt/m/n/10 n\OT
+1/cmtt/m/n/10 System\OMS/cmtt/m/n/10 n\OT1/cmtt/m/n/10 CurrentControlSet\OMS/cm
+tt/m/n/10 n\OT1/cmtt/m/n/10 Control\OMS/cmtt/m/n/10 n\OT1/cmtt/m/n/10 Session M
+anager\OMS/cmtt/m/n/10 n\OT1/cmtt/m/n/10 SafeDllSearchMode\OT1/cmr/m/n/10 "
+ []
+
+[6 <./pictures/1.7 event class file3.png> <./pictures/1.7 event class registry2
+.png>]
+<pictures/2.1 main.png, id=79, 1775.88469pt x 1004.25188pt>
+File: pictures/2.1 main.png Graphic file (type png)
+<use pictures/2.1 main.png>
+Package pdftex.def Info: pictures/2.1 main.png  used on input line 203.
+(pdftex.def)             Requested size: 450.97528pt x 255.01585pt.
+<pictures/2.1 main2.png, id=80, 1556.81625pt x 806.26219pt>
+File: pictures/2.1 main2.png Graphic file (type png)
+<use pictures/2.1 main2.png>
+Package pdftex.def Info: pictures/2.1 main2.png  used on input line 205.
+(pdftex.def)             Requested size: 450.97528pt x 233.5517pt.
+ [7 <./pictures/2.1 main.png> <./pictures/2.1 main2.png>]
+<pictures/2.1 process creation.png, id=90, 1735.23282pt x 134.00063pt>
+File: pictures/2.1 process creation.png Graphic file (type png)
+<use pictures/2.1 process creation.png>
+Package pdftex.def Info: pictures/2.1 process creation.png  used on input line 
+211.
+(pdftex.def)             Requested size: 450.97528pt x 34.82501pt.
+<pictures/2.1 firefox start.png, id=91, 817.55438pt x 435.12563pt>
+File: pictures/2.1 firefox start.png Graphic file (type png)
+<use pictures/2.1 firefox start.png>
+Package pdftex.def Info: pictures/2.1 firefox start.png  used on input line 213
+.
+(pdftex.def)             Requested size: 450.97528pt x 240.0236pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--214
+
+ []
+
+[8 <./pictures/2.1 process creation.png> <./pictures/2.1 firefox start.png>]
+<pictures/2.2 File Summary.png, id=99, 1356.56813pt x 792.71156pt>
+File: pictures/2.2 File Summary.png Graphic file (type png)
+<use pictures/2.2 File Summary.png>
+Package pdftex.def Info: pictures/2.2 File Summary.png  used on input line 219.
+
+(pdftex.def)             Requested size: 450.97528pt x 263.51884pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--221
+
+ []
+
+[9 <./pictures/2.2 File Summary.png>]
+<pictures/2.3 Registry Summary.png, id=106, 1370.11874pt x 840.13875pt>
+File: pictures/2.3 Registry Summary.png Graphic file (type png)
+<use pictures/2.3 Registry Summary.png>
+Package pdftex.def Info: pictures/2.3 Registry Summary.png  used on input line 
+226.
+(pdftex.def)             Requested size: 450.97528pt x 276.52875pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
+
+ []
+
+[10 <./pictures/2.3 Registry Summary.png>]
+<pictures/2.4 Network Monitor.png, id=114, 1777.39032pt x 1005.00468pt>
+File: pictures/2.4 Network Monitor.png Graphic file (type png)
+<use pictures/2.4 Network Monitor.png>
+Package pdftex.def Info: pictures/2.4 Network Monitor.png  used on input line 2
+34.
+(pdftex.def)             Requested size: 450.97528pt x 254.99232pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--236
+
+ []
+
+[11 <./pictures/2.4 Network Monitor.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]|\OT1/cmr/bx/n/10 Fame
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]|\OT1/cmr/bx/n/10 Process
+ []
+
+
+Overfull \hbox (3.11055pt too wide) in paragraph at lines 244--244
+[]|\OT1/cmr/bx/n/10 Protocol
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12] [13] (s2210239021_protocol.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `s2210239021_protocol.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23189 strings out of 475248
- 436082 string characters out of 5757812
- 1922785 words of memory out of 5000000
- 44362 multiletter control sequences out of 15000+600000
- 562323 words of font info for 50 fonts, out of 8000000 for 9000
+ 23536 strings out of 475248
+ 445869 string characters out of 5757812
+ 1961785 words of memory out of 5000000
+ 44681 multiletter control sequences out of 15000+600000
+ 562799 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,11n,107p,516b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr10.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr17.pfb>
-Output written on s2210239021_protocol.pdf (2 pages, 163183 bytes).
+cmbx10.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jakim/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jakim/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jakim/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on s2210239021_protocol.pdf (13 pages, 1899469 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 169 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 
