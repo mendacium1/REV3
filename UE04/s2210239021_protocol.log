@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.17)  29 NOV 2023 21:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.17)  30 NOV 2023 14:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -934,14 +934,19 @@ t dem Pfad "C:\OMS/cmsy/m/n/10 n\OT1/cmr/m/n/10 Windows\OMS/cmsy/m/n/10 n\OT1/c
 mr/m/n/10 Prefetch\OMS/cmsy/m/n/10 n\OT1/cmr/m/n/10 ...".
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
 <pictures/1.7 event class file2.png, id=54, 749.80125pt x 858.20625pt>
 File: pictures/1.7 event class file2.png Graphic file (type png)
 <use pictures/1.7 event class file2.png>
 Package pdftex.def Info: pictures/1.7 event class file2.png  used on input line
- 173.
+ 176.
 (pdftex.def)             Requested size: 315.68132pt x 361.32155pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--174
+Underfull \hbox (badness 10000) in paragraph at lines 175--177
 
  []
 
@@ -950,34 +955,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--174
 File: pictures/1.7 event class file3.png Graphic file (type png)
 <use pictures/1.7 event class file3.png>
 Package pdftex.def Info: pictures/1.7 event class file3.png  used on input line
- 178.
-(pdftex.def)             Requested size: 315.68132pt x 133.3857pt.
+ 179.
+(pdftex.def)             Requested size: 450.97528pt x 190.54747pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--179
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
-185.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 185.
+186.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 186.
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 185.
+(Font)              for symbol `textbackslash' on input line 186.
 
 <pictures/1.7 event class registry2.png, id=67, 794.97pt x 39.89906pt>
 File: pictures/1.7 event class registry2.png Graphic file (type png)
 <use pictures/1.7 event class registry2.png>
 Package pdftex.def Info: pictures/1.7 event class registry2.png  used on input 
-line 186.
+line 187.
 (pdftex.def)             Requested size: 383.37512pt x 19.24202pt.
 
-Overfull \hbox (44.77199pt too wide) in paragraph at lines 184--187
+Overfull \hbox (44.77199pt too wide) in paragraph at lines 185--188
 \OT1/cmr/m/n/10 Events und der Pfad "\OT1/cmtt/m/n/10 HKLM\OMS/cmtt/m/n/10 n\OT
 1/cmtt/m/n/10 System\OMS/cmtt/m/n/10 n\OT1/cmtt/m/n/10 CurrentControlSet\OMS/cm
 tt/m/n/10 n\OT1/cmtt/m/n/10 Control\OMS/cmtt/m/n/10 n\OT1/cmtt/m/n/10 Session M
@@ -989,86 +994,115 @@ anager\OMS/cmtt/m/n/10 n\OT1/cmtt/m/n/10 SafeDllSearchMode\OT1/cmr/m/n/10 "
 <pictures/2.1 main.png, id=79, 1775.88469pt x 1004.25188pt>
 File: pictures/2.1 main.png Graphic file (type png)
 <use pictures/2.1 main.png>
-Package pdftex.def Info: pictures/2.1 main.png  used on input line 203.
+Package pdftex.def Info: pictures/2.1 main.png  used on input line 204.
 (pdftex.def)             Requested size: 450.97528pt x 255.01585pt.
 <pictures/2.1 main2.png, id=80, 1556.81625pt x 806.26219pt>
 File: pictures/2.1 main2.png Graphic file (type png)
 <use pictures/2.1 main2.png>
-Package pdftex.def Info: pictures/2.1 main2.png  used on input line 205.
+Package pdftex.def Info: pictures/2.1 main2.png  used on input line 206.
 (pdftex.def)             Requested size: 450.97528pt x 233.5517pt.
- [7 <./pictures/2.1 main.png> <./pictures/2.1 main2.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--208
+
+ []
+
+[7 <./pictures/2.1 main.png> <./pictures/2.1 main2.png>]
 <pictures/2.1 process creation.png, id=90, 1735.23282pt x 134.00063pt>
 File: pictures/2.1 process creation.png Graphic file (type png)
 <use pictures/2.1 process creation.png>
 Package pdftex.def Info: pictures/2.1 process creation.png  used on input line 
-211.
+212.
 (pdftex.def)             Requested size: 450.97528pt x 34.82501pt.
 <pictures/2.1 firefox start.png, id=91, 817.55438pt x 435.12563pt>
 File: pictures/2.1 firefox start.png Graphic file (type png)
 <use pictures/2.1 firefox start.png>
-Package pdftex.def Info: pictures/2.1 firefox start.png  used on input line 213
+Package pdftex.def Info: pictures/2.1 firefox start.png  used on input line 214
 .
 (pdftex.def)             Requested size: 450.97528pt x 240.0236pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--214
-
- []
-
-[8 <./pictures/2.1 process creation.png> <./pictures/2.1 firefox start.png>]
+ [8 <./pictures/2.1 process creation.png> <./pictures/2.1 firefox start.png>]
 <pictures/2.2 File Summary.png, id=99, 1356.56813pt x 792.71156pt>
 File: pictures/2.2 File Summary.png Graphic file (type png)
 <use pictures/2.2 File Summary.png>
-Package pdftex.def Info: pictures/2.2 File Summary.png  used on input line 219.
+Package pdftex.def Info: pictures/2.2 File Summary.png  used on input line 221.
 
 (pdftex.def)             Requested size: 450.97528pt x 263.51884pt.
+<pictures/2.2 File Summary2.png, id=100, 750.55406pt x 65.49469pt>
+File: pictures/2.2 File Summary2.png Graphic file (type png)
+<use pictures/2.2 File Summary2.png>
+Package pdftex.def Info: pictures/2.2 File Summary2.png  used on input line 224
+.
+(pdftex.def)             Requested size: 450.97528pt x 39.35306pt.
+<pictures/2.2 File Summary3.png, id=101, 1202.99437pt x 307.1475pt>
+File: pictures/2.2 File Summary3.png Graphic file (type png)
+<use pictures/2.2 File Summary3.png>
+Package pdftex.def Info: pictures/2.2 File Summary3.png  used on input line 226
+.
+(pdftex.def)             Requested size: 450.97528pt x 115.14253pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--221
-
+Overfull \hbox (25.91452pt too wide) in paragraph at lines 219--227
+\OT1/cmr/m/n/10 Be-tra-chtet man zus^^?atzlich die .htm-Datei im "C:\OMS/cmtt/m
+/n/10 n\OT1/cmr/m/n/10 Users\OMS/cmtt/m/n/10 n\OT1/cmr/m/n/10 user\OMS/cmtt/m/n
+/10 n\OT1/cmr/m/n/10 AppData\OMS/cmtt/m/n/10 n\OT1/cmr/m/n/10 Local\OMS/cmtt/m/
+n/10 n\OT1/cmr/m/n/10 Microsoft\OMS/cmtt/m/n/10 n\OT1/cmr/m/n/10 Windows\OMS/cm
+tt/m/n/10 n\OT1/cmr/m/n/10 Temporary
  []
 
-[9 <./pictures/2.2 File Summary.png>]
-<pictures/2.3 Registry Summary.png, id=106, 1370.11874pt x 840.13875pt>
+
+Overfull \hbox (12.1089pt too wide) in paragraph at lines 219--227
+\OT1/cmr/m/n/10 In-ter-net Files\OMS/cmtt/m/n/10 n\OT1/cmr/m/n/10 Content.IE5\O
+MS/cmtt/m/n/10 n\OT1/cmr/m/n/10 ..."-Verzeichnis, kann man fes-tellen, dass im-
+mer 8.192 Bytes dem File angeh^^?angt
+ []
+
+[9 <./pictures/2.2 File Summary.png> <./pictures/2.2 File Summary2.png> <./pict
+ures/2.2 File Summary3.png>]
+<pictures/2.3 Registry Summary.png, id=110, 1370.11874pt x 840.13875pt>
 File: pictures/2.3 Registry Summary.png Graphic file (type png)
 <use pictures/2.3 Registry Summary.png>
 Package pdftex.def Info: pictures/2.3 Registry Summary.png  used on input line 
-226.
+233.
 (pdftex.def)             Requested size: 450.97528pt x 276.52875pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--228
+Underfull \hbox (badness 10000) in paragraph at lines 231--235
 
  []
 
 [10 <./pictures/2.3 Registry Summary.png>]
-<pictures/2.4 Network Monitor.png, id=114, 1777.39032pt x 1005.00468pt>
+<pictures/2.4 Network Monitor.png, id=118, 1777.39032pt x 1005.00468pt>
 File: pictures/2.4 Network Monitor.png Graphic file (type png)
 <use pictures/2.4 Network Monitor.png>
 Package pdftex.def Info: pictures/2.4 Network Monitor.png  used on input line 2
-34.
+41.
 (pdftex.def)             Requested size: 450.97528pt x 254.99232pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--236
+Underfull \hbox (badness 10000) in paragraph at lines 238--243
 
  []
 
 [11 <./pictures/2.4 Network Monitor.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 244--244
-[]|\OT1/cmr/bx/n/10 Fame
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 254.
+
+Overfull \hbox (0.68439pt too wide) in paragraph at lines 256--256
+[]|\OT1/cmr/bx/n/9 Frame
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--244
-[]|\OT1/cmr/bx/n/10 Process
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+\OT1/cmr/bx/n/9 Num-
  []
 
 
-Overfull \hbox (3.11055pt too wide) in paragraph at lines 244--244
-[]|\OT1/cmr/bx/n/10 Protocol
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+[]|\OT1/cmr/bx/n/9 Process
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+[]|\OT1/cmr/bx/n/9 Protocol
+ []
 
-[12] [13] (s2210239021_protocol.aux)
+[12] (s2210239021_protocol.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -1081,24 +1115,26 @@ Package rerunfilecheck Info: File `s2210239021_protocol.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23536 strings out of 475248
- 445869 string characters out of 5757812
+ 23568 strings out of 475248
+ 446818 string characters out of 5757812
  1961785 words of memory out of 5000000
- 44681 multiletter control sequences out of 15000+600000
- 562799 words of font info for 52 fonts, out of 8000000 for 9000
+ 44710 multiletter control sequences out of 15000+600000
+ 564019 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,107p,516b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,12n,107p,577b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jakim/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jakim/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jakim/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on s2210239021_protocol.pdf (13 pages, 1899469 bytes).
+ublic/amsfonts/cm/cmbx9.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jakim/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jakim/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jakim/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jakim/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/j
+akim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on s2210239021_protocol.pdf (12 pages, 2074150 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 177 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

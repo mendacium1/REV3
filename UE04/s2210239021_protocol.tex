@@ -146,7 +146,7 @@ skipbelow=\baselineskip, % Space below the frame
 		\label{table:procmon-events}
 	\end{table}
 
-	Filter für Event-Klasse "File System":\\
+	\noindent Filter für Event-Klasse "File System":\\
 	\includegraphics[width=0.7\linewidth]{"pictures/1.7 event class file"}\\
 	Filter für Event-Klasse "Registry":\\
 	\includegraphics[width=0.7\linewidth]{"pictures/1.7 event class registry"}\\
@@ -168,14 +168,15 @@ skipbelow=\baselineskip, % Space below the frame
 		\item Conhost.exe:\\
 		Die Dateizugriffe vom Kind-Prozess "Conhost.exe" sind bei allen Executables gleich.
 	\end{enumerate}
-	Allgemein anzumerken ist, dass unter Windows 7 mehr Events zu sehen sind, da das Laden von dlls anders funktioniert. Die \textbf{api-ms-win-*.dll}s tauchen unter Windows 11 nicht auf. Die genauen Gründe für die Unterschiede zwischen Win7 und Win10 konnten nicht recherchiert werden.\\
-	Windows 7 Beispiel-Screenshot (md-Variante):\\
+	\begin{mynote}
+		Allgemein anzumerken ist, dass unter Windows 7 mehr Events zu sehen sind, da das Laden von dlls anders funktioniert. Die \textbf{api-ms-win-*.dll}s tauchen unter Windows 11 nicht auf. Die genauen Gründe für die Unterschiede zwischen Win7 und Win10 konnten nicht recherchiert werden.\\
+	\end{mynote}
+	
+	\noindent Windows 7 Beispiel-Screenshot (md-Variante):\\
 	\includegraphics[width=0.7\linewidth]{"pictures/1.7 event class file2"}\\
-	
-	\pagebreak
-	
+		
 	\noindent Windows 11 Beispiel-Screenshot (md-Variante):\\
-	\includegraphics[width=0.7\linewidth]{"pictures/1.7 event class file3"}\\
+	\includegraphics[width=1\linewidth]{"pictures/1.7 event class file3"}\\
 	
 	\noindent\textbf{Registryzugriffe}\\
 	\begin{enumerate}
@@ -203,7 +204,7 @@ skipbelow=\baselineskip, % Space below the frame
 	\includegraphics[width=1\linewidth]{"pictures/2.1 main"}
 	Anschließend kann es interessant sein, sich eine Summary der Prozessaktivitäten anzeigen zu lassen:\\
 	\includegraphics[width=1\linewidth]{"pictures/2.1 main2"}
-	Dies verschafft bereits einen groben Überblick.
+	Dies verschafft bereits einen groben Überblick. Auffällig ist ebenfalls, dass es keine "Network Events" gibt, obwohl firefox ein YouTube-Video lädt. Dies liegt vermutlich an den Funktionsumfängen des "Process Monitor"s unter Windows 7. Deshalb wird für die Netzwerkanalyse später der "Microsoft Network Monitor 3.4" verwendet.\\
 	
 	\pagebreak
 	
@@ -211,37 +212,48 @@ skipbelow=\baselineskip, % Space below the frame
 	\includegraphics[width=1\linewidth]{"pictures/2.1 process creation"}\\
 	Zugehörige CommandLine:\\
 	\includegraphics[width=1\linewidth]{"pictures/2.1 firefox start"}\\
+	Das Ausführen dieses Befehls startet "firefox.exe" (Browser) mit einer übergebenen url. Die Auswirkung des Parameters "-osint" wurde nicht näher recherchiert.
 	
 	\pagebreak
 	
 	\noindent\textbf{Dateizugriffe}\\
-	Da nach dem Filtern auf "\texttt{Process Name is a}" und "\texttt{Event Class is File System}" immernoch weit über 1000 Events bleiben, kann das Tool "File Summary" im "Process Monitor" hilfreich sein:\\
+	Da nach dem Filtern auf "\texttt{Process Name is a.exe}" und "\texttt{Event Class is File System}" immernoch weit über 1000 Events bleiben, kann das Tool "File Summary" im "Process Monitor" hilfreich sein:\\
 	\includegraphics[width=1\linewidth]{"pictures/2.2 File Summary"}
 	Neben den "normal" interessanten Informationen, wie importierte Funktionen/geladenen Libraries, findet man über die File Summary sehr schnell, dass die firefox.exe verwendet wird und dass mit einem File "sib.html" gearbeitet wird. Anzumerken ist, dass hier nur das File "a" gezeigt wird (mit Kind-Prozessen mehr Information).\\
+	Durch einen Doppelclick in der "File Summary" kann auf die entprechenden Events gefiltert werden:\\
+	\includegraphics[width=1\linewidth]{"pictures/2.2 File Summary2"}
+	Betrachtet man zusätzlich die .htm-Datei im "C:\textbackslash Users\textbackslash user\textbackslash AppData\textbackslash Local\textbackslash Microsoft\textbackslash Windows\textbackslash Temporary Internet Files\textbackslash Content.IE5\textbackslash ..."-Verzeichnis, kann man festellen, dass immer 8.192 Bytes dem File angehängt werden. Dies könnte darauf hindeuten, dass aus dem Internet Informationen stückchenweise heruntergeladen und in die temporäre Datei "sichere-informationssysteme[1].htm" gespeichert werden.\\
+	\includegraphics[width=1\linewidth]{"pictures/2.2 File Summary3"}
+	
 	
 	\pagebreak
 	
 	\noindent \textbf{Registryzugriffe}\\
 	Da das "a"-File ebenfalls sehr viele Registryzugriffe hat, ist es am sinnvollsten die "Registry Summary" zu verwenden.\\
 	\includegraphics[width=1\linewidth]{"pictures/2.3 Registry Summary"}\\
-	Besondere Auffälligkeiten konnte hier nicht gefunden werden.\\
+	Auf Grund der großen Menge an Events und einer fehlenden Expertise, konnte bei den Registryzugriffen keine besonderen Auffälligkeiten gefunden werden.\\
 	
 	\pagebreak
 	
 	\noindent \textbf{Netzwerkkommunikation}\\
-	Da die Analyse der Netzwerkkommunikation eines Prozesses unter Windows 7 mit dem "Process Monitor" nicht so gut funktioniert wie unter Windows 11, wurde eine zustätzliche Software dafür verwendet:\\
+	Da die Analyse der Netzwerkkommunikation eines Prozesses unter Windows 7 mit dem "Process Monitor" nicht so gut funktioniert wie unter Windows 11, wurde die zustätzliche Software "\textbf{Microsoft Network Monitor 3.4}" dafür verwendet:\\
 	\url{https://www.microsoft.com/en-us/download/details.aspx?id=4865}\\
 	\includegraphics[width=1\linewidth]{"pictures/2.4 Network Monitor"}\\
 	Die damit empfangenen Pakete können als \texttt{.cap} exportiert werden.\\
 
+	\begin{mynote}
+		Eine .cap-Datei (Netzwerk-capture-Datei) und die unterschiedlichen .pml-Dateien (Process Monitor) sind wiederum im .zip-Archiv angehängt.
+	\end{mynote}
+
 	\pagebreak
 	
 	\noindent Folgende Tabelle zeigt oberflächlich die Netzwerk-kommunikation der "a"-Datei (siehe network.csv für mehr Details):\\
-	\begin{table}[h]
+	\begin{table}[htbp]
 		\centering
+		\small
 		\begin{tabular}{|m{1cm}|m{1.5cm}|m{3cm}|m{3cm}|m{1.4cm}|}
 			\hline
-			\textbf{Fame Number} & \textbf{Process Name} &          \textbf{Source} &    \textbf{Destination} & \textbf{Protocol Name} \\ \hline
+			\textbf{Frame Number} & \textbf{Process Name} &          \textbf{Source} &    \textbf{Destination} & \textbf{Protocol Name} \\ \hline
 			15 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
 			16 &        a.exe & web11.fh-ooe.at & 192.168.232.129 &           TCP \\ \hline
 			17 &        a.exe & 192.168.232.129 & web11.fh-ooe.at &           TCP \\ \hline
@@ -286,9 +298,7 @@ skipbelow=\baselineskip, % Space below the frame
 		\label{table:a-network}
 	\end{table}
 	
-	\begin{mynote}
-		Eine .cap-Datei (Netzwerk-capture-Datei) und die unterschiedlichen .pml-Dateien (Process Monitor) sind wiederum im .zip-Archiv angehängt.
-	\end{mynote}
+
 	
 	
 	\label{LastPage}
