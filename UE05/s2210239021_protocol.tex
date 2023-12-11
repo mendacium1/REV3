@@ -110,8 +110,9 @@ skipbelow=\baselineskip, % Space below the frame
 	Die Ausführung des Befehls \texttt{binwalk} mit der Option \texttt{--signature} auf die Datei \texttt{r6400-V1.0.1.12\_1.0.11.chk} liefert folgende Informationen über die Binärdatei der Firmware:\\
 	\includegraphics[width=1\linewidth]{"pictures/1.2 signature.png"}\\
 	\begin{itemize}
-		\item \textbf{TRX Firmware-Header:} Das Binärbild enthält einen TRX Firmware-Header, der häufig bei Firmware-Dateien für Router oder ähnliche Geräte verwendet wird. Er ist in Little-Endian-Format mit einer Größe des Images von 27.537.408 Bytes und enthält einen CRC32-Prüfsummenwert.
-		
+		\item \textbf{TRX Firmware-Header:} Das Binärbild enthält einen TRX Firmware-Header, der häufig bei Firmware-Dateien für Router oder ähnliche Geräte verwendet wird. Er ist in Little-Endian-Format mit einer Größe des Images von 27.537.408 Bytes und enthält einen CRC32-Prüfsummenwert.\\
+		Betrachtet man den Bootloader an Stelle \textbf{0x1C} ("loader offset"), so findet man zu Beginn einen String "\textbf{U12H332T00\_NETGEARHDR0.0}"(radare2 visual mode). Dies könnte eine Information über Name/Version des Bootloaders darstellen:\\
+		\includegraphics[width=0.7\linewidth]{"pictures/1.2.1 bootloader"}
 		\item \textbf{LZMA komprimierte Daten:} Der Teil der Datei enthält LZMA-komprimierte Daten. Dies schließt Eigenschaften, eine Wörterbuchgröße und die unkomprimierte Größe ein.
 		
 		\item \textbf{Squashfs-Dateisystem:} Das Binärbild umfasst ein Squashfs-Dateisystem. Squashfs ist ein komprimiertes, schreibgeschütztes Dateisystem für Linux. Die Version, der Kompressionstyp (xz), die Größe, die Anzahl der Inodes, die Blockgröße und das Erstellungsdatum werden ebenfalls angegeben.
@@ -119,7 +120,7 @@ skipbelow=\baselineskip, % Space below the frame
 	Das Erstellungsdatum des Squashfs-Dateisystems ist der 31. Mai 2016 um 15:57:09 Uhr.\\
 	
 	\noindent\textbf{Extrahieren} der LZMA komprimierten Datei und des squashfs-Dateisystems:\\
-	\includegraphics[width=0.4\linewidth]{"pictures/1.3 extract lzma.png"}\\
+	\includegraphics[width=0.4\linewidth]{"pictures/1.3 extract lzma.png"}
 	\includegraphics[width=0.4\linewidth]{"pictures/1.4 extract filesystem.png"}\\
 	
 	\pagebreak
