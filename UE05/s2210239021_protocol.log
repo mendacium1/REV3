@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.17)  10 DEC 2023 14:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.17)  11 DEC 2023 21:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -734,28 +734,35 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \backup@length=\skip128
 \ar@cellbox=\box71
 )
+(C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip129
+\multirow@cntb=\count315
+\multirow@dima=\skip130
+\bigstrutjot=\dimen275
+)
 \bibdata{references}
 (s2210239021_protocol.bbl) (s2210239021_protocol.aux)
 \openout1 = `s2210239021_protocol.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -795,16 +802,16 @@ LaTeX Font Info:    ... okay on input line 70.
 (C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count315
-\scratchdimen=\dimen275
+\scratchcounter=\count316
+\scratchdimen=\dimen276
 \scratchbox=\box72
-\nofMPsegments=\count316
-\nofMParguments=\count317
+\nofMPsegments=\count317
+\nofMParguments=\count318
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count318
-\MPscratchDim=\dimen276
-\MPnumerator=\count319
-\makeMPintoPDFobject=\count320
+\MPscratchCnt=\count319
+\MPscratchDim=\dimen277
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
 \everyMPtoPDFconversion=\toks34
 )
 (C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -817,120 +824,187 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 70.
+Package hyperref Info: Link coloring OFF on input line 71.
  (s2210239021_protocol.out) (s2210239021_protocol.out)
 \@outlinefile=\write4
 \openout4 = `s2210239021_protocol.out'.
 
-\c@lstlisting=\count321
+\c@lstlisting=\count322
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 75.
+(Font)              <12> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 75.
+(Font)              <8> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 75.
+(Font)              <6> on input line 76.
 <fhooe_logo.jpg, id=6, 154.176pt x 93.4692pt>
 File: fhooe_logo.jpg Graphic file (type jpg)
 <use fhooe_logo.jpg>
-Package pdftex.def Info: fhooe_logo.jpg  used on input line 79.
+Package pdftex.def Info: fhooe_logo.jpg  used on input line 80.
 (pdftex.def)             Requested size: 154.1756pt x 93.46896pt.
 <si_logo.jpg, id=7, 207.6558pt x 43.6029pt>
 File: si_logo.jpg Graphic file (type jpg)
 <use si_logo.jpg>
-Package pdftex.def Info: si_logo.jpg  used on input line 84.
+Package pdftex.def Info: si_logo.jpg  used on input line 85.
 (pdftex.def)             Requested size: 207.65529pt x 43.60278pt.
  [1
 
 {C:/Users/jakim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./fhooe_logo
 .jpg> <./si_logo.jpg>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 105.
+(Font)              <7> on input line 106.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 105.
+(Font)              <5> on input line 106.
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
 
 <pictures/1.1 Extract.png, id=18, 930.47626pt x 533.995pt>
 File: pictures/1.1 Extract.png Graphic file (type png)
 <use pictures/1.1 Extract.png>
-Package pdftex.def Info: pictures/1.1 Extract.png  used on input line 109.
+Package pdftex.def Info: pictures/1.1 Extract.png  used on input line 110.
 (pdftex.def)             Requested size: 225.48764pt x 129.39992pt.
 <pictures/1.2 signature.png, id=19, 1668.2325pt x 214.8025pt>
 File: pictures/1.2 signature.png Graphic file (type png)
 <use pictures/1.2 signature.png>
-Package pdftex.def Info: pictures/1.2 signature.png  used on input line 111.
+Package pdftex.def Info: pictures/1.2 signature.png  used on input line 112.
 (pdftex.def)             Requested size: 450.97528pt x 58.06627pt.
 
-Overfull \hbox (26.13644pt too wide) in paragraph at lines 108--112
+Overfull \hbox (26.13644pt too wide) in paragraph at lines 109--113
 \OT1/cmr/m/n/10 Die Ausf^^?uhrung des Be-fehls \OT1/cmtt/m/n/10 binwalk \OT1/cm
 r/m/n/10 mit der Op-tion \OT1/cmtt/m/n/10 --signature \OT1/cmr/m/n/10 auf die D
 atei \OT1/cmtt/m/n/10 r6400-V1.0.1.12[]1.0.11.chk
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--112
+Underfull \hbox (badness 10000) in paragraph at lines 109--113
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+(C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+(C:\Users\jakim\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
 
  []
 
-<pictures/1.3 extract lzma.png, id=20, 580.1675pt x 92.345pt>
+<pictures/1.2.1 bootloader.png, id=20, 631.60968pt x 104.64093pt>
+File: pictures/1.2.1 bootloader.png Graphic file (type png)
+<use pictures/1.2.1 bootloader.png>
+Package pdftex.def Info: pictures/1.2.1 bootloader.png  used on input line 136.
+
+(pdftex.def)             Requested size: 298.18137pt x 49.40157pt.
+[2 <./pictures/1.1 Extract.png (PNG copy)> <./pictures/1.2 signature.png (PNG c
+opy)>]
+Overfull \hbox (26.63445pt too wide) in paragraph at lines 138--139
+[]\OT1/cmr/bx/n/10 LZMA kom-prim-ierte Daten: \OT1/cmr/m/n/10 Der LZMA-komprimi
+erte Teil (Lempel-Ziv-Markov-Kettenalgorithmus)
+ []
+
+<pictures/1.3 extract lzma.png, id=53, 580.1675pt x 92.345pt>
 File: pictures/1.3 extract lzma.png Graphic file (type png)
 <use pictures/1.3 extract lzma.png>
-Package pdftex.def Info: pictures/1.3 extract lzma.png  used on input line 122.
+Package pdftex.def Info: pictures/1.3 extract lzma.png  used on input line 145.
 
 (pdftex.def)             Requested size: 180.38736pt x 28.7126pt.
-<pictures/1.4 extract filesystem.png, id=21, 547.04375pt x 89.33376pt>
+<pictures/1.4 extract filesystem.png, id=54, 547.04375pt x 89.33376pt>
 File: pictures/1.4 extract filesystem.png Graphic file (type png)
 <use pictures/1.4 extract filesystem.png>
 Package pdftex.def Info: pictures/1.4 extract filesystem.png  used on input lin
-e 123.
+e 146.
 (pdftex.def)             Requested size: 180.38736pt x 29.45705pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--124
+Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
  []
 
-[2 <./pictures/1.1 Extract.png (PNG copy)> <./pictures/1.2 signature.png (PNG c
-opy)> <./pictures/1.3 extract lzma.png (PNG copy)> <./pictures/1.4 extract file
-system.png (PNG copy)>]
-<pictures/1.5 mount squashfs.png, id=33, 715.67375pt x 352.31625pt>
+<pictures/1.5 mount squashfs.png, id=55, 715.67375pt x 352.31625pt>
 File: pictures/1.5 mount squashfs.png Graphic file (type png)
 <use pictures/1.5 mount squashfs.png>
-Package pdftex.def Info: pictures/1.5 mount squashfs.png  used on input line 12
-8.
+Package pdftex.def Info: pictures/1.5 mount squashfs.png  used on input line 15
+0.
 (pdftex.def)             Requested size: 180.38736pt x 88.79921pt.
-<pictures/1.6 find httpd.png, id=34, 366.36874pt x 64.24pt>
+<pictures/1.6 find httpd.png, id=56, 366.36874pt x 64.24pt>
 File: pictures/1.6 find httpd.png Graphic file (type png)
 <use pictures/1.6 find httpd.png>
-Package pdftex.def Info: pictures/1.6 find httpd.png  used on input line 130.
+Package pdftex.def Info: pictures/1.6 find httpd.png  used on input line 152.
 (pdftex.def)             Requested size: 180.38736pt x 31.6298pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--131
+Underfull \hbox (badness 10000) in paragraph at lines 149--153
 
  []
 
-<pictures/1.7 architecture, entry point.png, id=35, 873.2625pt x 914.41624pt>
+[3 <./pictures/1.2.1 bootloader.png> <./pictures/1.3 extract lzma.png (PNG copy
+)> <./pictures/1.4 extract filesystem.png (PNG copy)> <./pictures/1.5 mount squ
+ashfs.png (PNG copy)> <./pictures/1.6 find httpd.png (PNG copy)>]
+<pictures/1.7 architecture, entry point.png, id=63, 873.2625pt x 914.41624pt>
 File: pictures/1.7 architecture, entry point.png Graphic file (type png)
 <use pictures/1.7 architecture, entry point.png>
 Package pdftex.def Info: pictures/1.7 architecture, entry point.png  used on in
-put line 134.
+put line 158.
 (pdftex.def)             Requested size: 180.38736pt x 188.87973pt.
+<pictures/1.8 httpd compare.png, id=65, 958.3303pt x 52.69687pt>
+File: pictures/1.8 httpd compare.png Graphic file (type png)
+<use pictures/1.8 httpd compare.png>
+Package pdftex.def Info: pictures/1.8 httpd compare.png  used on input line 160
+.
+(pdftex.def)             Requested size: 315.68132pt x 17.35866pt.
+<pictures/1.8 httpd compare downloaded.png, id=66, 517.935pt x 542.025pt>
+File: pictures/1.8 httpd compare downloaded.png Graphic file (type png)
+<use pictures/1.8 httpd compare downloaded.png>
+Package pdftex.def Info: pictures/1.8 httpd compare downloaded.png  used on inp
+ut line 165.
+(pdftex.def)             Requested size: 225.48764pt x 235.97746pt.
+<pictures/1.8 httpd compare extracted.png, id=67, 521.69907pt x 540.51938pt>
+File: pictures/1.8 httpd compare extracted.png Graphic file (type png)
+<use pictures/1.8 httpd compare extracted.png>
+Package pdftex.def Info: pictures/1.8 httpd compare extracted.png  used on inpu
+t line 170.
+(pdftex.def)             Requested size: 225.48764pt x 233.62296pt.
+ [4 <./pictures/1.7 architecture, entry point.png (PNG copy)> <./pictures/1.8 h
+ttpd compare.png> <./pictures/1.8 httpd compare downloaded.png> <./pictures/1.8
+ httpd compare extracted.png>]
+<pictures/1.8 httpd compare2.png, id=79, 1245.9047pt x 594.72188pt>
+File: pictures/1.8 httpd compare2.png Graphic file (type png)
+<use pictures/1.8 httpd compare2.png>
+Package pdftex.def Info: pictures/1.8 httpd compare2.png  used on input line 17
+8.
+(pdftex.def)             Requested size: 315.68132pt x 150.68561pt.
+<pictures/2.1 ghidra search.png, id=81, 1287.30937pt x 663.98062pt>
+File: pictures/2.1 ghidra search.png Graphic file (type png)
+<use pictures/2.1 ghidra search.png>
+Package pdftex.def Info: pictures/2.1 ghidra search.png  used on input line 183
+.
+(pdftex.def)             Requested size: 450.97528pt x 232.60945pt.
+<pictures/2.2 ghidra printf.png, id=82, 536.0025pt x 59.47218pt>
+File: pictures/2.2 ghidra printf.png Graphic file (type png)
+<use pictures/2.2 ghidra printf.png>
+Package pdftex.def Info: pictures/2.2 ghidra printf.png  used on input line 185
+.
+(pdftex.def)             Requested size: 315.68132pt x 35.02565pt.
+<pictures/2.2 ghidra system.png, id=83, 212.29312pt x 36.135pt>
+File: pictures/2.2 ghidra system.png Graphic file (type png)
+<use pictures/2.2 ghidra system.png>
+Package pdftex.def Info: pictures/2.2 ghidra system.png  used on input line 188
+.
+(pdftex.def)             Requested size: 315.68132pt x 53.7353pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+Underfull \hbox (badness 10000) in paragraph at lines 181--189
 
  []
 
-[3 <./pictures/1.5 mount squashfs.png (PNG copy)> <./pictures/1.6 find httpd.pn
-g (PNG copy)> <./pictures/1.7 architecture, entry point.png (PNG copy)>]
-(s2210239021_protocol.aux)
+[5 <./pictures/1.8 httpd compare2.png> <./pictures/2.1 ghidra search.png> <./pi
+ctures/2.2 ghidra printf.png>] [6 <./pictures/2.2 ghidra system.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+[7] [8] [9] [10] [11] (s2210239021_protocol.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -939,24 +1013,30 @@ Package rerunfilecheck Info: File `s2210239021_protocol.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23324 strings out of 475248
- 439416 string characters out of 5757812
- 1925785 words of memory out of 5000000
- 44492 multiletter control sequences out of 15000+600000
- 563134 words of font info for 53 fonts, out of 8000000 for 9000
+ 24380 strings out of 475248
+ 455231 string characters out of 5757812
+ 2375785 words of memory out of 5000000
+ 45220 multiletter control sequences out of 15000+600000
+ 563302 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,107p,516b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\jakim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1000.pk><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmbx12.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jakim/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jakim/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on s2210239021_protocol.pdf (3 pages, 1898813 bytes).
+ 102i,12n,107p,516b,1985s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{lstnumber.-2.289} has been referenced but does not 
+exist, replaced by a fixed one
+
+ <C:\Users\jakim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm10
+00.pk><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmr10.pfb><C:/Users/jakim/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jakim/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jakim/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/jakim/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/jakim
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on s2210239021_protocol.pdf (11 pages, 3488172 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 521 PDF objects out of 1000 (max. 8388607)
+ 325 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
